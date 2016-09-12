@@ -620,11 +620,18 @@ a {
   border: 1px solid #cf5d0f;
 }
 #header .header-nav .social a.github {
-  background: url("/img/github.png") center no-repeat #afb6ca;
-  border: 1px solid #afb6ca;
+  background: url("/img/github.png") center no-repeat #010101;
+  border: 1px solid #010101;
 }
 #header .header-nav .social a.github:hover {
-  border: 1px solid #909ab6;
+  border: 1px solid #010101;
+}
+#header .header-nav .social a.youtube {
+  background: url("/img/youtube.png") center no-repeat #cf3427;
+  border: 1px solid #cf3427;
+}
+#header .header-nav .social a.youtube:hover {
+  border: 1px solid #cf3427;
 }
 #header .header-nav .social a.facebook {
   background: url("/img/facebook.png") center no-repeat #3b5998;
