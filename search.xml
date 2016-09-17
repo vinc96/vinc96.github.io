@@ -1,293 +1,105 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-
-    <!--[if lt IE 9]>
-        <style>body {display: none; background: none !important} </style>
-        <meta http-equiv="Refresh" Content="0; url=//outdatedbrowser.com/" />
-    <![endif]-->
-
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="format-detection" content="telephone=no" />
-<meta name="author" content="VinC Cheng" />
-
-
-
-<meta name="description" content="TypographyHeadingsHeadings from h1 through h6 are constructed with a # for each level:
-123456# h1 Heading## h2 Heading### h3 Heading#### h4 Heading##### h5 Heading###### h6 Heading">
-<meta property="og:type" content="article">
-<meta property="og:title" content="MarkDown Cheat Sheet">
-<meta property="og:url" content="https://vinc96.github.io/2016/09/12/MarkDown-Cheat-Sheet/index.html">
-<meta property="og:site_name" content="(*´∇｀*) VinC |HomePage">
-<meta property="og:description" content="TypographyHeadingsHeadings from h1 through h6 are constructed with a # for each level:
-123456# h1 Heading## h2 Heading### h3 Heading#### h4 Heading##### h5 Heading###### h6 Heading">
-<meta property="og:image" content="http://octodex.github.com/images/minion.png">
-<meta property="og:image" content="http://octodex.github.com/images/stormtroopocat.jpg">
-<meta property="og:image" content="http://octodex.github.com/images/dojocat.jpg">
-<meta property="og:updated_time" content="2016-09-17T07:32:21.849Z">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="MarkDown Cheat Sheet">
-<meta name="twitter:description" content="TypographyHeadingsHeadings from h1 through h6 are constructed with a # for each level:
-123456# h1 Heading## h2 Heading### h3 Heading#### h4 Heading##### h5 Heading###### h6 Heading">
-<meta name="twitter:image" content="http://octodex.github.com/images/minion.png">
-
-<link rel="apple-touch-icon" href= "/apple-touch-icon.png">
-
-
-    <link rel="alternate" href="/atom.xml" title="(*´∇｀*) VinC |HomePage" type="application/atom+xml">
-
-
-
-    <link rel="shortcut icon" href="/favicon.ico">
-
-
-
-    <link href="//cdn.bootcss.com/animate.css/3.5.1/animate.min.css" rel="stylesheet">
-
-
-
-    <link href="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
-
-
-
-    <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
-    <link href="//cdn.bootcss.com/pace/1.0.2/themes/silver/pace-theme-bounce.css" rel="stylesheet">
-
-
-<link rel="stylesheet" href="/css/style.css">
-
-
-
-<link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
-
-
-<title>MarkDown Cheat Sheet | (*´∇｀*) VinC |HomePage</title>
-
-<script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
-<script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
-
-<script>
-    var yiliaConfig = {
-        fancybox: true,
-        animate: true,
-        isHome: false,
-        isPost: true,
-        isArchive: false,
-        isTag: false,
-        isCategory: false,
-        fancybox_js: "//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js",
-        scrollreveal: "//cdn.bootcss.com/scrollReveal.js/3.1.4/scrollreveal.min.js",
-        search: true
-    }
-</script>
-
-
-    <script> yiliaConfig.jquery_ui = [false]; </script>
-
-
-
-    <script> yiliaConfig.rootUrl = "\/";</script>
-
-
-
-    <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56ff76c972fc0cf9"></script>
-
-
-
-
-</head>
-<body>
-  <div id="container">
-    <div class="left-col">
-    <div class="overlay"></div>
-<div class="intrude-less">
-    <header id="header" class="inner">
-        <a href="/" class="profilepic">
-            <img src="/img/avatar.jpg" class="animated zoomIn">
-        </a>
-        <hgroup>
-          <h1 class="header-author"><a href="/">VinC Cheng</a></h1>
-        </hgroup>
-
-        
-        <p class="header-subtitle">UofU</p>
-        
-
-        
-            <form id="search-form">
-            <input type="text" id="local-search-input" name="q" placeholder="search..." class="search form-control" autocomplete="off" autocorrect="off" searchonload="true" />
-            <i class="fa fa-times" onclick="resetSearch()"></i>
-            </form>
-            <div id="local-search-result"></div>
-            <p class='no-result'>No results found <i class='fa fa-spinner fa-pulse'></i></p>
-        
-
-
-        
-            <div id="switch-btn" class="switch-btn">
-                <div class="icon">
-                    <div class="icon-ctn">
-                        <div class="icon-wrap icon-house" data-idx="0">
-                            <div class="birdhouse"></div>
-                            <div class="birdhouse_holes"></div>
-                        </div>
-                        <div class="icon-wrap icon-ribbon hide" data-idx="1">
-                            <div class="ribbon"></div>
-                        </div>
-                        
-                        <div class="icon-wrap icon-link hide" data-idx="2">
-                            <div class="loopback_l"></div>
-                            <div class="loopback_r"></div>
-                        </div>
-                        
-                        
-                    </div>
-                    
-                </div>
-                <div class="tips-box hide">
-                    <div class="tips-arrow"></div>
-                    <ul class="tips-inner">
-                        <li>Menu</li>
-                        <li>Tags</li>
-                        
-                        <li>Friends</li>
-                        
-                        
-                    </ul>
-                </div>
-            </div>
-        
-
-        <div id="switch-area" class="switch-area">
-            <div class="switch-wrap">
-                <section class="switch-part switch-part1">
-                    <nav class="header-menu">
-                        <ul>
-                        
-                            <li><a href="/">Home</a></li>
-                        
-                            <li><a href="/archives/">Articles</a></li>
-                        
-                            <li><a href="/about/">About</a></li>
-                        
-                        </ul>
-                    </nav>
-                    <nav class="header-nav">
-                        <ul class="social">
-                            
-                        </ul>
-                    </nav>
-                </section>
-                
-                
-                <section class="switch-part switch-part2">
-                    <div class="widget tagcloud" id="js-tagcloud">
-                        
-                    </div>
-                </section>
-                
-                
-                
-                <section class="switch-part switch-part3">
-                    <div id="js-friends">
-                    
-                      <a class="main-nav-link switch-friends-link" href="https://hexo.io">Hexo Official</a>
-                    
-                      <a class="main-nav-link switch-friends-link" href="https://pages.github.com/">GitHub Page</a>
-                    
-                      <a class="main-nav-link switch-friends-link" href="http://moxfive.xyz/">MOxFIVE</a>
-                    
-                      <a class="main-nav-link switch-friends-link" href="https://github.com/vinc96">VinC Cheng</a>
-                    
-                      <a class="main-nav-link switch-friends-link" href="/sitemap.xml">SiteMap</a>
-                    
-                    </div>
-                </section>
-                
-
-                
-            </div>
-        </div>
-    </header>                
-</div>
-    </div>
-    <div class="mid-col">
-      <nav id="mobile-nav">
-      <div class="overlay">
-          <div class="slider-trigger"></div>
-          <h1 class="header-author js-mobile-header hide"><a href="/" title="回到主页">VinC Cheng</a></h1>
-      </div>
-    <div class="intrude-less">
-        <header id="header" class="inner">
-            <a href="/" class="profilepic">
-                <img src="/img/avatar.jpg" class="animated zoomIn">
-            </a>
-            <hgroup>
-              <h1 class="header-author"><a href="/" title="回到主页">VinC Cheng</a></h1>
-            </hgroup>
-            
-            <p class="header-subtitle">UofU</p>
-            
-            <nav class="header-menu">
-                <ul>
-                
-                    <li><a href="/">Home</a></li>
-                
-                    <li><a href="/archives/">Articles</a></li>
-                
-                    <li><a href="/about/">About</a></li>
-                
-                <div class="clearfix"></div>
-                </ul>
-            </nav>
-            <nav class="header-nav">
-                        <ul class="social">
-                            
-                        </ul>
-            </nav>
-        </header>                
-    </div>
-    <link class="menu-list" tags="Tags" friends="Friends" about="About Me"/>
-</nav>
-      <div class="body-wrap"><article id="post-MarkDown-Cheat-Sheet" class="article article-type-post" itemscope itemprop="blogPost">
+<?xml version="1.0" encoding="utf-8"?>
+<search>
   
-    <div class="article-meta">
-      <a href="/2016/09/12/MarkDown-Cheat-Sheet/" class="article-date">
-      <time datetime="2016-09-12T19:18:23.000Z" itemprop="datePublished">Sep 12</time>
-</a>
-
-
-    </div>
   
-  <div class="article-inner">
     
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="article-title" itemprop="name">
-      MarkDown Cheat Sheet
-    </h1>
-  
+    <entry>
+      <title><![CDATA[StylishTheme_AsukaGoogle]]></title>
+      <url>https://vinc96.github.io/2016/09/17/StylishTheme-AsukaGoogle/</url>
+      <content type="html"><![CDATA[<div class="github-widget" data-repo="vinc96/StylishTheme_AsukaGoogle"></div>
 
-      </header>
-      
-      <div class="article-info article-info-post">
-        
-
-        
-        <div class="clearfix"></div>
-      </div>
-      
+<a id="more"></a>]]></content>
+    </entry>
     
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-        <h1 id="Typography"><a href="#Typography" class="headerlink" title="Typography"></a>Typography</h1><h2 id="Headings"><a href="#Headings" class="headerlink" title="Headings"></a>Headings</h2><p>Headings from <code>h1</code> through <code>h6</code> are constructed with a <code>#</code> for each level:</p>
+    <entry>
+      <title><![CDATA[Dual Booting Or Virtual Machine To Learn Linux?]]></title>
+      <url>https://vinc96.github.io/2016/09/16/Dual-Booting-Or-Virtual-Machine-To-Learn-Linux/</url>
+      <content type="html"><![CDATA[<blockquote><p>I would suggest you to go with virtual box, provided your machine has atleast 4Gb RAM.</p>
+<p>Because:</p>
+<ol>
+<li>It is very likely that you will end up erasing your entire hard disk while installing Ubuntu. But there is no such risk when you install it in virtual box.</li>
+</ol>
+<a id="more"></a>
+<ol>
+<li><p>You can copy and take the virtual hard disk to other machines and attach it to virtual box there to have the same machine there as well.</p>
+</li>
+<li><p>You don’t have to install all the apps at both places, for example Skype because you can always use them by just minimizing your Ubuntu.</p>
+</li>
+<li><p>When you get comfortable with Linux, you can use linux server version instead of linux desktop. Linux server is very light because of no GUI.<br>This way your Linux will just be a terminal and you will need to use Windows for browsers and stuff. </p>
+</li>
+</ol>
+<p>Some suggestions:</p>
+<ol>
+<li><p>Put the virtual hard drive in some drive other than C and don’t hasitate when allocating space.</p>
+</li>
+<li><p>If you have a quad core CPU, allow the virtual machine to use atleast two.</p>
+</li>
+<li><p>Once you are in, avoid using mouse as much as you can. Try not to leave keyboard. This makes you fast.</p>
+</li>
+</ol>
+<p>Go learn it, you will love it. :)<br>Happy hunting ;)</p>
+<footer><strong>Pawan Bishnoi</strong><cite><a href="https://www.quora.com/Should-I-dual-boot-my-laptop-or-use-a-virtual-machine-to-Learn-Linux-as-there-may-be-a-boot-error-during-dual-booting/answer/Pawan-Bishnoi-3" target="_blank" rel="external">, Writing my story via vim, 8 hours a day since last year. ;)</a></cite></footer></blockquote>]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[阿里巴巴四员工编程抢月饼被开除]]></title>
+      <url>https://vinc96.github.io/2016/09/14/%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4%E5%9B%9B%E5%91%98%E5%B7%A5%E7%BC%96%E7%A8%8B%E6%8A%A2%E6%9C%88%E9%A5%BC%E8%A2%AB%E5%BC%80%E9%99%A4/</url>
+      <content type="html"><![CDATA[<p><img src="/img/alibaba_sml.jpg" alt="Alibaba"></p>
+<a id="more"></a>
+<p>中秋节，各个公司纷纷给员工发月饼送去节日的问候，本来是件挺开心的事情，可是阿里巴巴有4名员工却因为月饼遭开除。</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9月12日，阿里巴巴开放员工抢购月饼，阿里巴巴集团安全部4位员工和阿里云安全团队的1位员工，用编写脚本代码方式，在公开秒杀月饼的内部活动“秒到”了133盒月饼。虽然没有付款，但最终在当天晚间被劝退。</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;当事人在知乎上表示，只是想抢一盒月饼送给亲戚，看到有人用程序刷，于是自己也写了个脚本抢购16时放出的月饼，可是不但没有跳转到付款页面，反而一共抢了16盒，于是赶紧打电话给行政说要退，随后就被约谈，解约走人了。</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“16:30 约谈，17:30 解约合同就备好了，18:00走人，走之前还特意问了下需不需要交接工作，大家都不care，走的事情比较重要。”如此迅速，当事人表示猝不及防。</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;对此，阿里巴巴集团市场公关委员会主席王帅在微博上表示，“今天这个引起争议的决定，让我们再次提醒自己和每个员工，每场游戏都有规则，所有偶然总有必然。无可奈何是因为万事都有底线。很遗憾但祝愿他们的未来更好。”</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9月14日，阿里巴巴集团首席人力官蒋芳对日前的“月饼事件”作出官方回应，表示“这不是一个容易做出的决定，也不是一个可以得到各方面理解的决定”。</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在内部信的最后，蒋芳“真心希望也相信这个事业人生旅途上的挫折，能让这几位年轻人想的更远走的更踏实”。</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;附蒋芳写给员工的内部信全文：</p>
+<pre><code>关于“月饼”事件的复盘
+
+9月12日，安全部4位同学和阿里云安全团队的1位同学，用编写脚本代码方式，在公开秒杀月饼的内部活动“秒到”了133盒月饼。
+
+首席风险官刘振飞及阿里云总裁胡晓明在与上述同学经过非常坦诚的沟通之后，公司对上述同学做出了劝退的决定。这不是一个容易做出的决定，也不是一个可以得到各方面理解的决定，这个决定也让公司再次成为舆论的风暴眼。
+
+来自公司内网，微博微信，知乎，各种对此事的关注和讨论我们一直在看。今天，集团用4个小时对此事进行了复盘和讨论，逍遥子、戴珊、行癫、振飞，郭靖，王坚，王帅，马老师及我都参与其中。最终我们选择支持振飞和晓明的决定，我们读到和听到各界的反馈，也检讨和反思我们在做这个决定之前和之后哪些工作没有做好，引发许多同事担忧我们对坚守价值观过于偏执以及会给鼓励创新的容错文化造成伤害。实话实说，我们也争论，纠结，感到难受。
+
+很多人问为什么我们处理的这么重？因为阿里是一家把权力真正下放到每个普通小二手里的公司，下放权力的基础就是组织和员工之间的本能的信任。只有一个建立在信任基础上的团队才能走得长远，打得起硬仗。因为只有授权才能服务好客户，更快地根据客户需求做出迅速有效的决定。但我们必须反复提醒自己，要善待手中的权力，也像爱惜自己的眼睛一样爱惜别人对自己的信任，爱惜自己的才华，更何况是以攻防网络灰黑产和反作弊为己任的安全部门同事。
+
+未来我们还将继续充分信任和授权我们的同事。在这个过程里，我们可能还会作出一些让公司陷入风暴眼的决定，因为我们不是做给别人看的，而是敬重大家彼此间的信任，一致的理念，遵循做事做人的初衷和本心。
+
+公司和人一样，不完美。我们很幸运，用本心做对了一件件小事，才有了今天的影响力；未来我们若不能保持一颗敬畏心，而是以自己的方便和获益为首要考虑，那么也将是一件件看似不起眼的小事，解构和击败所有人的奋斗。
+
+有时候往往无心之举，却带来的大家都不愿但也要面对结果，这种结果最让人无奈。在月圆之夜送同伴离开，应该是这个中秋最大的遗憾。真心希望也相信这个事业人生旅途上的挫折，能让这几位年轻人想的更远走的更踏实。每个阿里巴巴的同事，也更应该理解，因为征途远，责任重。唯有学会约束自己的欲望，尊重自己的能力，敬畏手中的权力，我们才担得起亿万客户的信任和托付。
+
+蒋芳
+
+2016年9月14日
+</code></pre><p>除非注明，月光博客文章均为原创，转载请以链接形式标明本文地址</p>
+<p>本文地址：<a href="http://www.williamlong.info/archives/4730.html" target="_blank" rel="external">author page</a></p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Death Stranding - New Details from TGS 2016: Open World, Co-Op, 4K, & More!]]></title>
+      <url>https://vinc96.github.io/2016/09/14/Death-Stranding-New-Details-from-TGS-2016-Open-World-Co-Op-4K-More/</url>
+      <content type="html"><![CDATA[<div class="video-container" style="position: relative; padding-bottom: 56.25%; padding-top: 25px; height: 0;"><iframe style="position:absolute; top:0; left:0; width: 100%; height: 100%;" src="//www.youtube.com/embed/8kskVgv2Wu0" frameborder="0" allowfullscreen></iframe></div>
+<a id="more"></a>]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Basic CS Cheat Sheet]]></title>
+      <url>https://vinc96.github.io/2016/09/12/BasicCSCheatSheet/</url>
+      <content type="html"><![CDATA[<p><img src="/img/cheatSheet/JavaType.gif" alt="JavaType"></p>
+<a id="more"></a>
+<p><img src="/img/cheatSheet/trigonometric.PNG" alt="trigonometric"><br><img src="/img/cheatSheet/regex.gif" alt="Regex"><br><img src="/img/cheatSheet/ascii.PNG" alt="Ascii1"><br><img src="/img/cheatSheet/ascii2.PNG" alt="Ascii2"><br><img src="/img/cheatSheet/JavaExceptionType.PNG" alt="JavaExceptionType"></p>
+<p>刪除YouTube播放列表視頻代碼（在瀏覽器console內輸入）：</p>
+<p>function removeVideos(){<br>var el = document.getElementsByClassName(‘pl-video-edit-remove’);<br>var i=0;<br>setInterval(function(){el[i++].click()}, 50);<br>}<br>removeVideos();<br>window.onerror = function(){removeVideos();}</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[MarkDown Cheat Sheet]]></title>
+      <url>https://vinc96.github.io/2016/09/12/MarkDown-Cheat-Sheet/</url>
+      <content type="html"><![CDATA[<h1 id="Typography"><a href="#Typography" class="headerlink" title="Typography"></a>Typography</h1><h2 id="Headings"><a href="#Headings" class="headerlink" title="Headings"></a>Headings</h2><p>Headings from <code>h1</code> through <code>h6</code> are constructed with a <code>#</code> for each level:</p>
 <figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="section"># h1 Heading</span></div><div class="line"><span class="section">## h2 Heading</span></div><div class="line"><span class="section">### h3 Heading</span></div><div class="line"><span class="section">#### h4 Heading</span></div><div class="line"><span class="section">##### h5 Heading</span></div><div class="line"><span class="section">###### h6 Heading</span></div></pre></td></tr></table></figure>
 <a id="more"></a>
 <p>Renders to:</p>
@@ -504,252 +316,16 @@ line 3 of code
 <p><img src="http://octodex.github.com/images/dojocat.jpg" alt="Alt text" title="The Dojocat"></p>
 <p>With a reference later in the document defining the URL location:</p>
 <pre><code>[id]: http://octodex.github.com/images/dojocat.jpg  &quot;The Dojocat&quot;
-</code></pre>
-      
-    </div>
+</code></pre>]]></content>
+    </entry>
     
-  </div>
+    <entry>
+      <title><![CDATA[First Article]]></title>
+      <url>https://vinc96.github.io/2016/09/11/First-Article/</url>
+      <content type="html"><![CDATA[<div class="video-container" style="position: relative; padding-bottom: 56.25%; padding-top: 25px; height: 0;"><iframe style="position:absolute; top:0; left:0; width: 100%; height: 100%;" src="//www.youtube.com/embed/fgPAWUO0464" frameborder="0" allowfullscreen></iframe></div>
+<a id="more"></a>]]></content>
+    </entry>
+    
   
-    
-
-
-    <nav id="article-nav">
-        
-            <div id="article-nav-newer" class="article-nav-title">
-                <a href="/2016/09/12/BasicCSCheatSheet/">
-                    Basic CS Cheat Sheet
-                </a>
-            </div>
-        
-        
-            <div id="article-nav-older" class="article-nav-title">
-                <a href="/2016/09/11/First-Article/">
-                    First Article
-                </a>
-            </div>
-        
-    </nav>
-
   
-</article>
-
-    <div id="toc" class="toc-article">
-        <strong class="toc-title">Contents</strong>
-        
-            <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Typography"><span class="toc-number">1.</span> <span class="toc-text">Typography</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Headings"><span class="toc-number">1.1.</span> <span class="toc-text">Headings</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#h1-Heading"><span class="toc-number">2.</span> <span class="toc-text">h1 Heading</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#h2-Heading"><span class="toc-number">2.1.</span> <span class="toc-text">h2 Heading</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#h3-Heading"><span class="toc-number">2.1.1.</span> <span class="toc-text">h3 Heading</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#h4-Heading"><span class="toc-number">2.1.1.1.</span> <span class="toc-text">h4 Heading</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#h5-Heading"><span class="toc-number">2.1.1.1.1.</span> <span class="toc-text">h5 Heading</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#h6-Heading"><span class="toc-number">2.1.1.1.1.1.</span> <span class="toc-text">h6 Heading</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Horizontal-Rules"><span class="toc-number">2.2.</span> <span class="toc-text">Horizontal Rules</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Body-Copy"><span class="toc-number">2.3.</span> <span class="toc-text">Body Copy</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Emphasis"><span class="toc-number">2.4.</span> <span class="toc-text">Emphasis</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Bold"><span class="toc-number">2.4.1.</span> <span class="toc-text">Bold</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Italics"><span class="toc-number">2.4.2.</span> <span class="toc-text">Italics</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#strikethrough"><span class="toc-number">2.4.3.</span> <span class="toc-text">strikethrough</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Blockquotes"><span class="toc-number">2.5.</span> <span class="toc-text">Blockquotes</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Lists"><span class="toc-number">2.6.</span> <span class="toc-text">Lists</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Unordered"><span class="toc-number">2.6.1.</span> <span class="toc-text">Unordered</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Ordered"><span class="toc-number">2.6.2.</span> <span class="toc-text">Ordered</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Code"><span class="toc-number">2.7.</span> <span class="toc-text">Code</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Inline-code"><span class="toc-number">2.7.1.</span> <span class="toc-text">Inline code</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Indented-code"><span class="toc-number">2.7.2.</span> <span class="toc-text">Indented code</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Block-code-“fences”"><span class="toc-number">2.7.3.</span> <span class="toc-text">Block code “fences”</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Syntax-highlighting"><span class="toc-number">2.7.4.</span> <span class="toc-text">Syntax highlighting</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Tables"><span class="toc-number">2.8.</span> <span class="toc-text">Tables</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Right-aligned-text"><span class="toc-number">2.8.1.</span> <span class="toc-text">Right aligned text</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Links"><span class="toc-number">2.9.</span> <span class="toc-text">Links</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Basic-link"><span class="toc-number">2.9.1.</span> <span class="toc-text">Basic link</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Add-a-title"><span class="toc-number">2.9.2.</span> <span class="toc-text">Add a title</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Named-Anchors"><span class="toc-number">2.9.3.</span> <span class="toc-text">Named Anchors</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Images"><span class="toc-number">2.10.</span> <span class="toc-text">Images</span></a></li></ol></li></ol>
-        
-    </div>
-    <style>
-        .left-col .switch-btn,
-        .left-col .switch-area {
-            display: none;
-        }
-        .toc-level-3 i,
-        .toc-level-3 ol {
-            display: none !important;
-        }
-    </style>
-
-    <input type="button" id="tocButton" value="Hide"  title="Show or Hide Table of Contents">
-
-    <script>
-        yiliaConfig.toc = ["Hide", "Show", !!"false"];
-    </script>
-
-
-
-    
-<div class="share">
-    
-
-    
-        <div class="addthis_sharing_toolbox"></div>
-    
-</div>
-
-
-
-
-
-
-
-    
-        <section id="comments">
-    <style> aside.comment-bar { margin: auto 30px; }</style>
-    <div id="disqus_thread"></div>
-    <script>
-        var disqus_config = function(){
-            this.page.url = 'https://vinc96.github.io/2016/09/12/MarkDown-Cheat-Sheet/';
-            this.page.identifier = '2016/09/12/MarkDown-Cheat-Sheet/';
-        };
-        var loadComment = function(){
-            var d = document, s = d.createElement('script');
-            s.src = '//https-vinc96-github-io.disqus.com/embed.js';
-            s.setAttribute('data-timestamp', +new Date());
-            (d.head || d.body).appendChild(s);
-        }
-    </script>
-    
-    <script> loadComment(); </script>
-
-</section>
-
-
-    
-
-
-
-
-    <div class="scroll" id="post-nav-button">
-        
-            <a href="/2016/09/12/BasicCSCheatSheet/" title="Pre: Basic CS Cheat Sheet">
-                <i class="fa fa-angle-left"></i>
-            </a>
-        
-
-        <a title="Mini Archives"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
-
-        
-            <a href="/2016/09/11/First-Article/" title="Next: First Article">
-                <i class="fa fa-angle-right"></i>
-            </a>
-        
-    </div>
-
-    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/09/17/StylishTheme-AsukaGoogle/">StylishTheme_AsukaGoogle</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/09/16/Dual-Booting-Or-Virtual-Machine-To-Learn-Linux/">Dual Booting Or Virtual Machine To Learn Linux?</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/09/14/阿里巴巴四员工编程抢月饼被开除/">阿里巴巴四员工编程抢月饼被开除</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/09/14/Death-Stranding-New-Details-from-TGS-2016-Open-World-Co-Op-4K-More/">Death Stranding - New Details from TGS 2016: Open World, Co-Op, 4K, & More!</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/09/12/BasicCSCheatSheet/">Basic CS Cheat Sheet</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/09/12/MarkDown-Cheat-Sheet/">MarkDown Cheat Sheet</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/09/11/First-Article/">First Article</a></li></ul>
-
-
-
-
-    <script>
-        
-    </script>
-</div>
-      <footer id="footer">
-    <div class="outer">
-        <div id="footer-info">
-            <div class="footer-left">
-                <i class="fa fa-copyright"></i> 
-                2016 VinC Cheng
-            </div>
-            <div class="footer-right">
-                <a href="http://hexo.io/" target="_blank" title="A fast, simple &amp; powerful blog framework">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="Another simple and elegant theme for Hexo  v3.5">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
-            </div>
-        </div>
-        
-            <div class="visit">
-                
-                    <span id="busuanzi_container_site_pv" style='display:none'>
-                        <span id="site-visit" title="Site Visitors"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_uv"></span>
-                        </span>
-                    </span>
-                
-                
-                    <span>| </span>
-                
-                
-                    <span id="busuanzi_container_page_pv" style='display:none'>
-                        <span id="page-visit"  title="Page Hits"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
-                        </span>
-                    </span>
-                
-            </div>
-        
-    </div>
-</footer>
-    </div>
-    
-    <script src="/js/GithubRepoWidget.js"></script>
-
-<script data-main="/js/main.js" src="//cdn.bootcss.com/require.js/2.2.0/require.min.js"></script>
-
-    <script>
-        $(document).ready(function() {
-            var iPad = window.navigator.userAgent.indexOf('iPad');
-            if (iPad > -1 || $(".left-col").css("display") === "none") {
-                var bgColorList = ["#9db3f4", "#414141", "#e5a859", "#f5dfc6", "#c084a0", "#847e72", "#cd8390", "#996731"];
-                var bgColor = Math.ceil(Math.random() * (bgColorList.length - 1));
-                $("body").css({"background-color": bgColorList[bgColor], "background-size": "cover"});
-            }
-            else {
-                var backgroundnum = 3;
-                var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
-                $("body").css({"background": backgroundimg, "background-attachment": "fixed", "background-size": "cover"});
-            }
-        })
-    </script>
-
-
-
-
-
-    <script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-    tex2jax: {
-        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
-        processEscapes: true,
-        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-    }
-});
-
-MathJax.Hub.Queue(function() {
-    var all = MathJax.Hub.getAllJax(), i;
-    for(i=0; i < all.length; i += 1) {
-        all[i].SourceElement().parentNode.className += ' has-jax';                 
-    }       
-});
-</script>
-
-<script src="//cdn.bootcss.com/mathjax/2.6.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
-
-
-<div class="scroll" id="scroll">
-    <a href="#" title="Back to Top"><i class="fa fa-arrow-up"></i></a>
-    <a href="#comments" onclick="load$hide();" title="Comments"><i class="fa fa-comments-o"></i></a>
-    <a href="#footer" title="Go to Bottom"><i class="fa fa-arrow-down"></i></a>
-</div>
-<script>
-    // Open in New Window
-    
-        var oOpenInNew = {
-             github: ".github-widget a", 
-            
-            
-            
-            
-            
-             archives: ".archive-article-title", 
-             miniArchives: "a.post-list-link", 
-            
-             friends: "#js-friends a", 
-             socail: ".social a" 
-        }
-        for (var x in oOpenInNew) {
-            $(oOpenInNew[x]).attr("target", "_blank");
-        }
-    
-</script>
-
-    <script>
-        var originTitle = document.title;
-        var titleTime;
-        document.addEventListener("visibilitychange", function() {
-            if (document.hidden) {
-                document.title = "(つェ⊂) SleepingzzZ" + originTitle;
-                clearTimeout(titleTime);
-            }
-            else {
-                document.title = "(*´∇｀*) VinC |HomePage" + originTitle;
-                titleTime = setTimeout(function() {
-                    document.title = originTitle;
-                }, 2000);
-            }
-        })
-    </script>
-
-<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
-</script>
-  </div>
-</body>
-</html>
+</search>
