@@ -1,0 +1,13 @@
+---
+title: About
+date: 2016-09-16 17:06:19
+---
+<center>I am A Young Man</center>
+<center>My favorite song is 菜穂子(眼差し) -久石譲, which is a piece of music from a japanese movie <em>風立ちぬ THE WIND RISES</em>
+![風立ちぬ](https://upload.wikimedia.org/wikipedia/zh/4/47/Kazetachinu%28Movie_Poster%29.jpg)</center>
+<!-- <div style="margin:auto; width: 80%"> -->
+<iframe style="margin-left: calc(30% - 80px); min-width: 300px" frameborder="no" border="0" marginwidth="0" 
+marginheight="0" width=50% height=400 
+src="http://music.163.com/outchain/player?type=0&id=466516374&auto=1&height=430">
+</iframe>
+<!-- </div> -->
