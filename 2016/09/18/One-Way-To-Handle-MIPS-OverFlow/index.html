@@ -21,7 +21,7 @@
 <meta property="og:url" content="https://vinc96.github.io/2016/09/18/One-Way-To-Handle-MIPS-OverFlow/index.html">
 <meta property="og:site_name" content="(*´∇｀*) VinC |HomePage">
 <meta property="og:description" content="IntroductionException handlers, also known as trap handlers or interrupt handlers, can easily be incorporated into a MIPS program. This guide is not intended to be comprehensive but provides the essen">
-<meta property="og:updated_time" content="2016-09-18T22:33:02.587Z">
+<meta property="og:updated_time" content="2016-09-18T22:45:46.380Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="One Way To Handle MIPS OverFlow">
 <meta name="twitter:description" content="IntroductionException handlers, also known as trap handlers or interrupt handlers, can easily be incorporated into a MIPS program. This guide is not intended to be comprehensive but provides the essen">
@@ -36,8 +36,6 @@
     <link rel="shortcut icon" href="/favicon.ico">
 
 
-
-    <link href="//cdn.bootcss.com/animate.css/3.5.1/animate.min.css" rel="stylesheet">
 
 
 
@@ -64,7 +62,7 @@
 <script>
     var yiliaConfig = {
         fancybox: true,
-        animate: true,
+        animate: false,
         isHome: false,
         isPost: true,
         isArchive: false,
@@ -302,8 +300,8 @@
 </ol>
 </li>
 <li>If there is no instruction at location 0x800000180, MARS will terminate the MIPS program with an appropriate error message.</li>
-<li>The exception handler can return control to the program using the eret instruction. This will place the EPC register $14 value into the Program Counter, so be sure to increment $14 by 4 before returning to skip over the instruction that caused the exception. The mfc0 and mtc0 instructions are used to read from and write to Coprocessor 0 registers.</li>
-<li>Bits 8-15 of the Cause register $13 can also be used to indicate pending interrupts. Currently this is used only by the Keyboard and Display Simulator Tool, where bit 8 represents a keyboard interrupt and bit 9 represents a display interrupt. For more details, see the Help panel for that Tool.</li>
+<li>The exception handler can return control to the program using the eret instruction. This will place the EPC register \$14 value into the Program Counter, so be sure to increment \$14 by 4 before returning to skip over the instruction that caused the exception. The mfc0 and mtc0 instructions are used to read from and write to Coprocessor 0 registers.</li>
+<li>Bits 8-15 of the Cause register \$13 can also be used to indicate pending interrupts. Currently this is used only by the Keyboard and Display Simulator Tool, where bit 8 represents a keyboard interrupt and bit 9 represents a display interrupt. For more details, see the Help panel for that Tool.</li>
 <li>Exception types declared in mars.simulator.Exceptions, but not necessarily implemented, are ADDRESS_EXCEPTION_LOAD (4), ADDRESS_EXCEPTION_STORE (5), SYSCALL_EXCEPTION (8), BREAKPOINT_EXCEPTION (9), RESERVED_INSTRUCTION_EXCEPTION (10), ARITHMETIC_OVERFLOW_EXCEPTION (12), TRAP_EXCEPTION(13), DIVIDE_BY_ZERO_EXCEPTION (15), FLOATING_POINT_OVERFLOW (16), and FLOATING_POINT_UNDERFLOW (17).</li>
 <li>When writing a non-trivial exception handler, your handler must first save general purpose register contents, then restore them before returning.</li>
 </ul>
@@ -320,6 +318,12 @@
 
 
     <nav id="article-nav">
+        
+            <div id="article-nav-newer" class="article-nav-title">
+                <a href="/2016/09/21/Google-releases-Allo-an-AI-infused-messaging-app/">
+                    Google releases Allo: an AI-infused messaging app
+                </a>
+            </div>
         
         
             <div id="article-nav-older" class="article-nav-title">
@@ -402,7 +406,9 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/" title="Back to Homepage"><i class="fa fa-home"></i></a>
+            <a href="/2016/09/21/Google-releases-Allo-an-AI-infused-messaging-app/" title="Pre: Google releases Allo: an AI-infused messaging app">
+                <i class="fa fa-angle-left"></i>
+            </a>
         
 
         <a title="Mini Archives"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
@@ -414,7 +420,7 @@
         
     </div>
 
-    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/09/18/One-Way-To-Handle-MIPS-OverFlow/">One Way To Handle MIPS OverFlow</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/09/17/StylishTheme-AsukaGoogle/">StylishTheme_AsukaGoogle</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/09/16/Dual-Booting-Or-Virtual-Machine-To-Learn-Linux/">Dual Booting Or Virtual Machine To Learn Linux?</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/09/14/阿里巴巴四员工编程抢月饼被开除/">阿里巴巴四员工编程抢月饼被开除</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/09/14/Death-Stranding-New-Details-from-TGS-2016-Open-World-Co-Op-4K-More/">Death Stranding - New Details from TGS 2016: Open World, Co-Op, 4K, & More!</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/09/12/BasicCSCheatSheet/">Basic CS Cheat Sheet</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/09/12/MarkDown-Cheat-Sheet/">MarkDown Cheat Sheet</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/09/11/First-Article/">First Article</a></li></ul>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/09/21/Google-releases-Allo-an-AI-infused-messaging-app/">Google releases Allo: an AI-infused messaging app</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/09/18/One-Way-To-Handle-MIPS-OverFlow/">One Way To Handle MIPS OverFlow</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/09/17/StylishTheme-AsukaGoogle/">StylishTheme_AsukaGoogle</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/09/16/Dual-Booting-Or-Virtual-Machine-To-Learn-Linux/">Dual Booting Or Virtual Machine To Learn Linux?</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/09/14/阿里巴巴四员工编程抢月饼被开除/">阿里巴巴四员工编程抢月饼被开除</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/09/14/Death-Stranding-New-Details-from-TGS-2016-Open-World-Co-Op-4K-More/">Death Stranding - New Details from TGS 2016: Open World, Co-Op, 4K, & More!</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/09/12/BasicCSCheatSheet/">Basic CS Cheat Sheet</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/09/12/MarkDown-Cheat-Sheet/">MarkDown Cheat Sheet</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/09/11/First-Article/">First Article</a></li></ul>
 
 
 
