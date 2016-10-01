@@ -6,7 +6,7 @@
     <entry>
       <title><![CDATA[什么是Full Stack Engineer？<]]></title>
       <url>https://vinc96.github.io/2016/10/01/What-Is-Full-Stack-Engineer/</url>
-      <content type="html"><![CDATA[<p>作者：顾鹏<br>链接：<a href="https://www.zhihu.com/question/22420900/answer/21770992" target="_blank" rel="external">怎样成为全栈工程师（Full Stack Developer）？</a><br>来源：知乎<br>著作权归作者所有，转载请联系作者获得授权。<br><br><br><br></p>
+      <content type="html"><![CDATA[<p>作者：顾鹏<br>链接：<a href="https://www.zhihu.com/question/22420900/answer/21770992" target="_blank" rel="external">怎样成为全栈工程师（Full Stack Developer）？</a><br>来源：知乎<br>著作权归作者所有，转载请联系作者获得授权。<br><a id="more"></a><br><br><br><br></p>
 <h4 id="做这样一个简单的-app"><a href="#做这样一个简单的-app" class="headerlink" title="做这样一个简单的 app:"></a>做这样一个简单的 app:</h4><p>一个天气应用，干净清爽的界面，天气信息一目了然。它不仅可以精确预测未来 10 天的天气，还可以显示某地的历史天气信息。它具有自定义提醒功能，支持 web 版本， iOS 版， Android 版。</p>
 <p>为什么想要做这样一个 App ？因为你喜欢旅行，但没找到一个天气 App 可以提供你下个月或者某个特定月份的天气信息；因为你懒你没有每天看天气预报的习惯，你想要在第二天温度达到 30 度以上或者温差有 +/-7 度的时候，获得温馨提示；因为你要成为一个 Full Stack Engineer ，你必须不断训练每个 stack 的能力。<br><br><br><br></p>
 <h4 id="Web版"><a href="#Web版" class="headerlink" title="## Web版"></a>## Web版</h4><p>你决定用 MySql 来存储用户数据，用 NoSql 存储历史天气数据。你用 Redis 作为 cache ，缓存一些最常请求的天气数据。你用 Python 写后台，功能简单，后台不复杂，用户注册登录，抓取返回某城市的天气数据，某地的历史天气数据，很快便搞定。</p>
