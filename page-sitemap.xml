@@ -7,6 +7,13 @@
     </url>
     
     <url>
+        <loc>https://vinc96.github.io//404.html</loc>
+        <lastmod>2016-10-10T03:26:29.313Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
         <loc>https://vinc96.github.io/404/404.html</loc>
         <lastmod>2016-10-08T18:22:27.796Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -23,13 +30,6 @@
     <url>
         <loc>https://vinc96.github.io/tags/</loc>
         <lastmod>2016-10-01T09:08:38.206Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    
-    <url>
-        <loc>https://vinc96.github.io//404.html</loc>
-        <lastmod>2016-09-17T06:12:56.122Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
