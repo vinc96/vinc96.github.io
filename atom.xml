@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>VinC |HomePage (*´∇｀*)</title>
-  <subtitle>UofU</subtitle>
+  <title>VinC Blog</title>
+  <subtitle>顯化真我。</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://vinc96.github.io/"/>
