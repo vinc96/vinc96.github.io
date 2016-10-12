@@ -4,10 +4,10 @@
   
     
     <entry>
-      <title><![CDATA[[Bootstrap]modal导致navbar向右变大的解决方法]]></title>
+      <title><![CDATA[[Bootstrap] modal导致navbar向右变大的解决方法]]></title>
       <url>https://vinc96.github.io/2016/10/12/Bootstrap-modal%E5%AF%BC%E8%87%B4navbar%E5%90%91%E5%8F%B3%E5%8F%98%E5%A4%A7%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</url>
       <content type="html"><![CDATA[<blockquote>
-<p>modal可能导致页面的滚动条消失，并且navbar向右移。使用以下CSS可以解决问题：</p>
+<p>Bootstrap的modal弹出时，可能导致页面滚动条消失，并且navbar栏向右移。以下CSS可解决上述问题：</p>
 </blockquote>
 <pre><code>.modal-open{
     overflow-y: scroll;
@@ -17,10 +17,10 @@
     </entry>
     
     <entry>
-      <title><![CDATA[[solution]easy way to prevent nav menu from shifting right when Bootstrap modal open]]></title>
+      <title><![CDATA[[solution] easy way to prevent nav menu from shifting right when Bootstrap modal open]]></title>
       <url>https://vinc96.github.io/2016/10/12/Prevent-nav-menu-shifting-right-when-bootstrap-modal-open/</url>
       <content type="html"><![CDATA[<blockquote>
-<p>when the modal open, the browser’s scroll bar might disappear and the navbar may shift slightly to the right. The CSS below may fix the problem:</p>
+<p>when Bootstrap modal open/popup displayed, the browser’s scroll bar might disappear and the navbar may shift slightly to the right. The CSS below may fix the problem:</p>
 </blockquote>
 <pre><code>.modal-open{
     overflow-y: scroll;
