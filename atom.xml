@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://vinc96.github.io/"/>
-  <updated>2016-10-10T03:19:20.514Z</updated>
+  <updated>2016-10-12T19:05:26.360Z</updated>
   <id>https://vinc96.github.io/</id>
   
   <author>
@@ -14,6 +14,36 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>[Bootstrap]modal导致navbar向右变大的解决方法</title>
+    <link href="https://vinc96.github.io/2016/10/12/Bootstrap-modal%E5%AF%BC%E8%87%B4navbar%E5%90%91%E5%8F%B3%E5%8F%98%E5%A4%A7%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/"/>
+    <id>https://vinc96.github.io/2016/10/12/Bootstrap-modal导致navbar向右变大的解决方法/</id>
+    <published>2016-10-12T18:57:48.000Z</published>
+    <updated>2016-10-12T19:05:26.360Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote>
+<p>modal可能导致页面的滚动条消失，并且navbar向右移。使用以下CSS可以解决问题：</p>
+</blockquote>
+<pre><code>.modal-open{
+    overflow-y: scroll;
+    padding-right: 0 !important;
+}
+</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;modal可能导致页面的滚动条消失，并且navbar向右移。使用以下CSS可以解决问题：&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code&gt;.modal-open{
+    overflow-y: scroll;
+    padding-r
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>29个网页设计必要的备忘单(无图版)</title>
