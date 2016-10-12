@@ -46,6 +46,32 @@
   </entry>
   
   <entry>
+    <title>[solution]easy way to prevent nav menu from shifting right when Bootstrap modal open</title>
+    <link href="https://vinc96.github.io/2016/10/12/Prevent-nav-menu-shifting-right-when-bootstrap-modal-open/"/>
+    <id>https://vinc96.github.io/2016/10/12/Prevent-nav-menu-shifting-right-when-bootstrap-modal-open/</id>
+    <published>2016-10-12T18:54:57.000Z</published>
+    <updated>2016-10-12T19:07:05.305Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote>
+<p>when the modal open, the browser’s scroll bar might disappear and the navbar may shift slightly to the right. The CSS below may fix the problem:</p>
+</blockquote>
+<pre><code>.modal-open{
+    overflow-y: scroll;
+    padding-right: 0 !important;
+}
+</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;when the modal open, the browser’s scroll bar might disappear and the navbar may shift slightly to the right. The CSS below 
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>29个网页设计必要的备忘单(无图版)</title>
     <link href="https://vinc96.github.io/2016/10/09/29%E4%B8%AA%E7%BD%91%E9%A1%B5%E8%AE%BE%E8%AE%A1%E5%BF%85%E8%A6%81%E7%9A%84%E5%A4%87%E5%BF%98%E5%8D%95-%E6%97%A0%E5%9B%BE%E7%89%88/"/>
     <id>https://vinc96.github.io/2016/10/09/29个网页设计必要的备忘单-无图版/</id>
