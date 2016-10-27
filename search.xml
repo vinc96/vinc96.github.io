@@ -4,6 +4,32 @@
   
     
     <entry>
+      <title><![CDATA[How To Setting Apache Default/Catch-All Virtual Host [Ubuntu 16.04]]]></title>
+      <url>https://vinc96.github.io/2016/10/27/Setting-Apache-Default-Catch-All-Virtual-Host-Ubuntu-16-04-digitalocean/</url>
+      <content type="html"><![CDATA[<h2 id="First-check-you-default-virtual-host-and-activating-virtual-host-as"><a href="#First-check-you-default-virtual-host-and-activating-virtual-host-as" class="headerlink" title="First, check you default virtual host and activating virtual host as:"></a>First, check you default virtual host and activating virtual host as:</h2><pre><code>[admin@yourwebserver ~] # apachectl -t -D DUMP_VHOSTS
+</code></pre><p>If the default server shown isn’t the one you like,<br><a id="more"></a></p>
+<h2 id="then-list-all-avaliable-sites-configurations-by-typing"><a href="#then-list-all-avaliable-sites-configurations-by-typing" class="headerlink" title="then list all avaliable sites configurations by typing:"></a>then list all avaliable sites configurations by typing:</h2><pre><code>[admin@yourwebserver ~] # ls /etc/apache2/sites-available/
+</code></pre><p>e.g. you have the following 3 domains activating, and yourdomain1.com.conf is your current default virtual host:</p>
+<pre><code>yourdomain1.com.conf    yourdomain2.com.conf    yourdomain3.com.conf
+</code></pre><p>say you would like “yourdomain2.com” to be the default virtual host</p>
+<h2 id="then-rename-files-so-the-one-you-like-be-the-first-file-after-sorted"><a href="#then-rename-files-so-the-one-you-like-be-the-first-file-after-sorted" class="headerlink" title="then rename files so the one you like be the first file after sorted:"></a>then rename files so the one you like be the first file after sorted:</h2><pre><code>[admin@yourwebserver ~] # mv yourdomain2.com.conf 000-yourdomain2.com.conf
+[admin@yourwebserver ~] # mv yourdomain1.com.conf 002-yourdomain1.com.conf
+[admin@yourwebserver ~] # mv yourdomain3.com.conf 002-yourdomain3.com.conf
+</code></pre><h2 id="check-the-file-order-by-typing"><a href="#check-the-file-order-by-typing" class="headerlink" title="check the file order by typing:"></a>check the file order by typing:</h2><pre><code>[admin@yourwebserver ~] # ls /etc/apache2/sites-available/
+</code></pre><p>now your target file is the first file in the list:</p>
+<pre><code>000-yourdomain2.com.conf   002-yourdomain1.com.conf    002-yourdomain3.com.conf
+</code></pre><h2 id="Next-to-activate-the-changes-you-need-to-disable-those-origin-sites-they-no-longer-work-since-their-conf-names-is-changed-and-enable-renamed-sites"><a href="#Next-to-activate-the-changes-you-need-to-disable-those-origin-sites-they-no-longer-work-since-their-conf-names-is-changed-and-enable-renamed-sites" class="headerlink" title="Next, to activate the changes, you need to disable those origin sites (they no longer work since their conf names is changed), and enable renamed sites:"></a>Next, to activate the changes, you need to disable those origin sites (they no longer work since their conf names is changed), and enable renamed sites:</h2><pre><code>[admin@yourwebserver ~] # sudo a2dissite yourdomain1.com.conf
+[admin@yourwebserver ~] # sudo a2dissite yourdomain2.com.conf
+[admin@yourwebserver ~] # sudo a2dissite yourdomain3.com.conf
+[admin@yourwebserver ~] # sudo a2ensite 000-yourdomain2.com.conf
+[admin@yourwebserver ~] # sudo a2ensite 002-yourdomain1.com.conf
+[admin@yourwebserver ~] # sudo a2ensite 002-yourdomain1.com.conf
+</code></pre><h2 id="Last-restart-apache"><a href="#Last-restart-apache" class="headerlink" title="Last, restart apache"></a>Last, restart apache</h2><pre><code>[admin@yourwebserver ~] # sudo systemctl restart apache2
+[admin@yourwebserver ~] # sudo service apache2 restart
+</code></pre><h2 id="Finally-Test-Your-Results"><a href="#Finally-Test-Your-Results" class="headerlink" title="Finally, Test Your Results :)"></a>Finally, Test Your Results :)</h2>]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[Introducing Microsoft Surface Studio]]></title>
       <url>https://vinc96.github.io/2016/10/26/Introducing-Microsoft-Surface-Studio/</url>
       <content type="html"><![CDATA[<div class="video-container" style="position: relative; padding-bottom: 56.25%; padding-top: 25px; height: 0;"><iframe style="position:absolute; top:0; left:0; width: 100%; height: 100%;" src="//www.youtube.com/embed/BzMLA8YIgG0" frameborder="0" allowfullscreen></iframe></div>
