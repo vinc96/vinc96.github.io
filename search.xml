@@ -4,7 +4,7 @@
   
     
     <entry>
-      <title><![CDATA[How To Setting Apache Default/Catch-All Virtual Host [Ubuntu 16.04]]]></title>
+      <title><![CDATA[How To Set Apache Default/Catch-All Virtual Host [Ubuntu 16.04]]]></title>
       <url>https://vinc96.github.io/2016/10/27/Setting-Apache-Default-Catch-All-Virtual-Host-Ubuntu-16-04-digitalocean/</url>
       <content type="html"><![CDATA[<h2 id="First-check-you-default-virtual-host-and-activating-virtual-host-as"><a href="#First-check-you-default-virtual-host-and-activating-virtual-host-as" class="headerlink" title="First, check you default virtual host and activating virtual host as:"></a>First, check you default virtual host and activating virtual host as:</h2><pre><code>[admin@yourwebserver ~] # apachectl -t -D DUMP_VHOSTS
 </code></pre><p>If the default server shown isn’t the one you like,<br><a id="more"></a></p>
