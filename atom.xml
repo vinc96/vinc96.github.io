@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://vinc96.github.io/"/>
-  <updated>2016-12-11T00:06:23.402Z</updated>
+  <updated>2017-01-09T23:55:45.277Z</updated>
   <id>https://vinc96.github.io/</id>
   
   <author>
@@ -14,6 +14,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Matlab Cheat Sheet (Matlab备忘表)</title>
+    <link href="https://vinc96.github.io/2017/01/09/Matlab-Cheat-Sheet-Matlab%E5%A4%87%E5%BF%98%E8%A1%A8/"/>
+    <id>https://vinc96.github.io/2017/01/09/Matlab-Cheat-Sheet-Matlab备忘表/</id>
+    <published>2017-01-09T23:30:48.000Z</published>
+    <updated>2017-01-09T23:55:45.277Z</updated>
+    
+    <content type="html"><![CDATA[<p>Download Cheat Sheet:&ensp;&ensp;<a href="/img/cheatSheet/Matlab-Cheatsheet.pdf" download="">PDF version</a>&ensp;&ensp;<a href="/img/cheatSheet/Matlab-Cheatsheet.jpg" download="">JPG version (3253 x 2468)</a></p>
+<p><img src="/img/cheatSheet/Matlab-Cheatsheet.jpg" alt="Matlab Cheat Sheet"></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Download Cheat Sheet:&amp;ensp;&amp;ensp;&lt;a href=&quot;/img/cheatSheet/Matlab-Cheatsheet.pdf&quot; download=&quot;&quot;&gt;PDF version&lt;/a&gt;&amp;ensp;&amp;ensp;&lt;a href=&quot;/img/che
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Replacement Of USB (Print On Another Computer Without USB)</title>
