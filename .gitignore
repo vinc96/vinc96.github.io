@@ -1,8 +1,11 @@
 .DS_Store
-Thumbs.db
-db.json
-*.log
-node_modules/
-.deploy*/
+.deploy
+.deploy_git
+node_modules
 scaffolds
 .npmignore
+db.json
+package.json
+Thumbs.db
+*.log
+.deploy*/
