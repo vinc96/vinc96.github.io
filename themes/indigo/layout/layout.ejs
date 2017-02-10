@@ -1,0 +1,42 @@
+<%- partial('_partial/head') %>
+<body>
+  <!-- vinc add start-->
+  <!-- google analytics -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-80266516-4', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <!-- vinc add end -->
+  <%- partial('_partial/loading') %>
+  <nav id="menu" <% if(is_post() && theme.hideMenu){ %>class="hide"<% } %> >
+   <%- partial('_partial/menu') %>
+ </nav>
+ <main id="main">
+  <%- partial('_partial/header') %>
+  <!-- vinc add start -->
+  <!-- google ads -->
+  <div align="center">
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- blog-responsive -->
+    <ins class="adsbygoogle"
+    style="display:block"
+    data-ad-client="ca-pub-2062135651811238"
+    data-ad-slot="3669719103"
+    data-ad-format="auto"></ins>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+  <!-- vinc add end -->
+  <div class="container body-wrap">
+    <%- body %>
+  </div>
+</main>
+<%- partial('_partial/after-footer') %>
+<%- partial('_partial/script') %>
+</body>
+</html>
