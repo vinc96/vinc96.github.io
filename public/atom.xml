@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://vinc96.github.io/"/>
-  <updated>2017-01-10T01:01:46.317Z</updated>
+  <updated>2017-02-10T03:07:15.000Z</updated>
   <id>https://vinc96.github.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="https://vinc96.github.io/2017/01/09/Matlab-Cheat-Sheet-Matlab%E5%A4%87%E5%BF%98%E8%A1%A8/"/>
     <id>https://vinc96.github.io/2017/01/09/Matlab-Cheat-Sheet-Matlab备忘表/</id>
     <published>2017-01-09T23:30:48.000Z</published>
-    <updated>2017-01-10T01:01:46.317Z</updated>
+    <updated>2017-02-10T03:07:15.000Z</updated>
     
     <content type="html"><![CDATA[<p>Download Cheat Sheet:&ensp;&ensp;<a href="/img/cheatSheet/Matlab-Cheatsheet.pdf" download=""><strong>PDF version</strong></a>&ensp;&ensp;<a href="/img/cheatSheet/Matlab-Cheatsheet.jpg" download=""><strong>JPG version (3253 x 2468)</strong></a><br>More Resources:&ensp;&ensp;<a href="https://www.coursera.org/learn/machine-learning/supplement/Mlf3e/more-octave-matlab-resources" target="_blank" rel="external"><strong>Matlab Introduction and Basic Command (Coursera account Required)</strong></a>&ensp;&ensp;<a href="http://www.mathworks.com/index.html?s_tid=gn_logo" target="_blank" rel="external"><strong>Matlab Documentation</strong></a></p>
 <p><img src="/img/cheatSheet/Matlab-Cheatsheet.jpg" alt="Matlab Cheat Sheet"></p>
@@ -40,7 +40,7 @@
     <link href="https://vinc96.github.io/2016/12/10/Replacement-Of-USB-Print-On-Another-Computer-Without-USB/"/>
     <id>https://vinc96.github.io/2016/12/10/Replacement-Of-USB-Print-On-Another-Computer-Without-USB/</id>
     <published>2016-12-10T23:32:57.000Z</published>
-    <updated>2016-12-11T00:06:23.402Z</updated>
+    <updated>2017-02-10T03:07:15.000Z</updated>
     
     <content type="html"><![CDATA[<p>Let’s say you are in the situation that you want to print documents like photos/review paper, but you don’t have a printer at home. Then you have to print them at store or library.<br>In this case, seems like the only ways to bring data to printer are copying them to USB or upload them to cloud drive and share them. </p>
 <p>But both solutions aren’t that convenient.</p>
@@ -64,7 +64,7 @@
     <link href="https://vinc96.github.io/2016/12/02/Death-Stranding-Teaser-Trailer-TGA-2016-4K/"/>
     <id>https://vinc96.github.io/2016/12/02/Death-Stranding-Teaser-Trailer-TGA-2016-4K/</id>
     <published>2016-12-02T07:08:37.000Z</published>
-    <updated>2016-12-12T00:58:39.240Z</updated>
+    <updated>2017-02-10T03:07:15.000Z</updated>
     
     <content type="html"><![CDATA[<div class="video-container"><iframe src="//www.youtube.com/embed/S6JFH8Vit3E" frameborder="0" allowfullscreen></iframe></div>
 <a id="more"></a>]]></content>
@@ -83,7 +83,7 @@
     <link href="https://vinc96.github.io/2016/10/27/Setting-Apache-Default-Catch-All-Virtual-Host-Ubuntu-16-04-digitalocean/"/>
     <id>https://vinc96.github.io/2016/10/27/Setting-Apache-Default-Catch-All-Virtual-Host-Ubuntu-16-04-digitalocean/</id>
     <published>2016-10-27T07:46:36.000Z</published>
-    <updated>2016-10-27T08:46:13.663Z</updated>
+    <updated>2017-02-10T03:07:15.000Z</updated>
     
     <content type="html"><![CDATA[<h2 id="First-check-you-default-virtual-host-and-activating-virtual-host-as"><a href="#First-check-you-default-virtual-host-and-activating-virtual-host-as" class="headerlink" title="First, check you default virtual host and activating virtual host as:"></a>First, check you default virtual host and activating virtual host as:</h2><pre><code>[admin@yourwebserver ~] # apachectl -t -D DUMP_VHOSTS
 </code></pre><p>If the default server shown isn’t the one you like,<br><a id="more"></a></p>
@@ -122,7 +122,7 @@
     <link href="https://vinc96.github.io/2016/10/26/Introducing-Microsoft-Surface-Studio/"/>
     <id>https://vinc96.github.io/2016/10/26/Introducing-Microsoft-Surface-Studio/</id>
     <published>2016-10-27T02:06:41.000Z</published>
-    <updated>2016-10-27T02:25:20.256Z</updated>
+    <updated>2017-02-10T03:07:15.000Z</updated>
     
     <content type="html"><![CDATA[<div class="video-container"><iframe src="//www.youtube.com/embed/BzMLA8YIgG0" frameborder="0" allowfullscreen></iframe></div>
 <a id="more"></a>
@@ -143,7 +143,7 @@
     <link href="https://vinc96.github.io/2016/10/12/Bootstrap-modal%E5%AF%BC%E8%87%B4navbar%E5%90%91%E5%8F%B3%E5%8F%98%E5%A4%A7%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/"/>
     <id>https://vinc96.github.io/2016/10/12/Bootstrap-modal导致navbar向右变大的解决方法/</id>
     <published>2016-10-12T18:57:48.000Z</published>
-    <updated>2016-10-12T19:11:16.240Z</updated>
+    <updated>2017-02-10T03:07:15.000Z</updated>
     
     <content type="html"><![CDATA[<blockquote>
 <p>Bootstrap的modal弹出时，可能导致页面滚动条消失，并且navbar栏向右移。以下CSS可解决上述问题：</p>
@@ -173,7 +173,7 @@
     <link href="https://vinc96.github.io/2016/10/12/Prevent-nav-menu-shifting-right-when-bootstrap-modal-open/"/>
     <id>https://vinc96.github.io/2016/10/12/Prevent-nav-menu-shifting-right-when-bootstrap-modal-open/</id>
     <published>2016-10-12T18:54:57.000Z</published>
-    <updated>2016-10-12T19:09:44.505Z</updated>
+    <updated>2017-02-10T03:07:15.000Z</updated>
     
     <content type="html"><![CDATA[<blockquote>
 <p>when Bootstrap modal open/popup displayed, the browser’s scroll bar might disappear and the navbar may shift slightly to the right. The CSS below may fix the problem:</p>
@@ -199,7 +199,7 @@
     <link href="https://vinc96.github.io/2016/10/09/29%E4%B8%AA%E7%BD%91%E9%A1%B5%E8%AE%BE%E8%AE%A1%E5%BF%85%E8%A6%81%E7%9A%84%E5%A4%87%E5%BF%98%E5%8D%95-%E6%97%A0%E5%9B%BE%E7%89%88/"/>
     <id>https://vinc96.github.io/2016/10/09/29个网页设计必要的备忘单-无图版/</id>
     <published>2016-10-10T02:48:31.000Z</published>
-    <updated>2016-10-10T03:19:20.514Z</updated>
+    <updated>2017-02-10T03:07:15.000Z</updated>
     
     <content type="html"><![CDATA[<p><img src="http://www.featuredcustomers.com/media/Company.logo/2b4020a0-2eec-11e4-9566-01c96d5b13fb_Cheat-Sheet-Logo-408x100.jpg" alt="Cheat Sheet symbol"><br><a id="more"></a></p>
 <h1 id="CSS-层叠样式表-Cascading-Style-Sheets"><a href="#CSS-层叠样式表-Cascading-Style-Sheets" class="headerlink" title="CSS - 层叠样式表 (Cascading Style Sheets)"></a>CSS - 层叠样式表 (Cascading Style Sheets)</h1><h3 id="01-CSS-OverAPI-com"><a href="#01-CSS-OverAPI-com" class="headerlink" title="01. CSS - OverAPI.com"></a>01. <a href="http://overapi.com/css" target="_blank" rel="external"><strong>CSS - OverAPI.com</strong></a></h3><h3 id="02-媒介查询"><a href="#02-媒介查询" class="headerlink" title="02. 媒介查询"></a>02. <a href="http://mac-blog.org.ua/css-3-media-queries-cheat-sheet/" target="_blank" rel="external"><strong>媒介查询</strong></a></h3><h3 id="03-响应式布局"><a href="#03-响应式布局" class="headerlink" title="03. 响应式布局"></a>03. <a href="http://blog.uxpin.com/4596/responsive-web-design-cheat-sheet/" target="_blank" rel="external"><strong>响应式布局</strong></a></h3><h3 id="04-系统字体兼容性"><a href="#04-系统字体兼容性" class="headerlink" title="04. 系统字体兼容性"></a>04. <a href="http://fontfamily.io/" target="_blank" rel="external"><strong>系统字体兼容性</strong></a></h3><hr>
@@ -232,7 +232,7 @@
     <link href="https://vinc96.github.io/2016/10/09/29%E4%B8%AA%E7%BD%91%E9%A1%B5%E8%AE%BE%E8%AE%A1%E5%BF%85%E8%A6%81%E7%9A%84%E5%B7%A5%E5%85%B7%E5%9B%BE/"/>
     <id>https://vinc96.github.io/2016/10/09/29个网页设计必要的工具图/</id>
     <published>2016-10-10T00:38:40.000Z</published>
-    <updated>2016-10-10T03:20:13.184Z</updated>
+    <updated>2017-02-10T03:07:15.000Z</updated>
     
     <content type="html"><![CDATA[<p><img src="http://www.featuredcustomers.com/media/Company.logo/2b4020a0-2eec-11e4-9566-01c96d5b13fb_Cheat-Sheet-Logo-408x100.jpg" alt="Cheat Sheet symbol"><br><a id="more"></a></p>
 <p><strong>跳到备忘单：</strong></p>
@@ -301,7 +301,7 @@
     <link href="https://vinc96.github.io/2016/10/07/CSS%E4%B9%8BPosition%E8%AF%A6%E8%A7%A3/"/>
     <id>https://vinc96.github.io/2016/10/07/CSS之Position详解/</id>
     <published>2016-10-08T02:20:45.000Z</published>
-    <updated>2016-10-09T19:14:56.343Z</updated>
+    <updated>2017-02-10T03:07:15.000Z</updated>
     
     <content type="html"><![CDATA[<h3 id="我们先来看看CSS3-Api中对position属性的相关定义："><a href="#我们先来看看CSS3-Api中对position属性的相关定义：" class="headerlink" title="我们先来看看CSS3 Api中对position属性的相关定义："></a>我们先来看看CSS3 Api中对position属性的相关定义：</h3><blockquote>
 <p>static：无特殊定位，对象遵循正常文档流。top，right，bottom，left等属性不会被应用。<br> relative：对象遵循正常文档流，但将依据top，right，bottom，left等属性在正常文档流中偏移位置。而其层叠通过z-index属性定义。<br> absolute：对象脱离正常文档流，使用top，right，bottom，left等属性进行绝对定位。而其层叠通过z-index属性定义。<br> fixed：对象脱离正常文档流，使用top，right，bottom，left等属性以窗口为参考点进行定位，当出现滚动条时，对象不会随着滚动。而其层叠通过z-index属性定义。  </p>
@@ -408,7 +408,7 @@
     <link href="https://vinc96.github.io/2016/10/04/Introducing-Daydream-View-VR-Headset-by-Google/"/>
     <id>https://vinc96.github.io/2016/10/04/Introducing-Daydream-View-VR-Headset-by-Google/</id>
     <published>2016-10-04T22:19:28.000Z</published>
-    <updated>2016-10-07T20:48:24.970Z</updated>
+    <updated>2017-02-10T03:07:15.000Z</updated>
     
     <content type="html"><![CDATA[<div class="video-container"><iframe src="//www.youtube.com/embed/q4y0KOeXViI?start=2138" frameborder="0" allowfullscreen></iframe></div>
 <a id="more"></a>
@@ -429,7 +429,7 @@
     <link href="https://vinc96.github.io/2016/10/01/What-Is-Full-Stack-Engineer/"/>
     <id>https://vinc96.github.io/2016/10/01/What-Is-Full-Stack-Engineer/</id>
     <published>2016-10-01T19:14:57.000Z</published>
-    <updated>2016-10-01T20:57:09.013Z</updated>
+    <updated>2017-02-10T03:07:15.000Z</updated>
     
     <content type="html"><![CDATA[<p>作者：顾鹏<br>链接：<a href="https://www.zhihu.com/question/22420900/answer/21770992" target="_blank" rel="external">怎样成为全栈工程师（Full Stack Developer）？</a><br>来源：知乎<br>著作权归作者所有，转载请联系作者获得授权。<br><a id="more"></a><br><br><br><br></p>
 <h4 id="做这样一个简单的-app"><a href="#做这样一个简单的-app" class="headerlink" title="做这样一个简单的 app:"></a>做这样一个简单的 app:</h4><p>一个天气应用，干净清爽的界面，天气信息一目了然。它不仅可以精确预测未来 10 天的天气，还可以显示某地的历史天气信息。它具有自定义提醒功能，支持 web 版本， iOS 版， Android 版。</p>
@@ -475,7 +475,7 @@
     <link href="https://vinc96.github.io/2016/09/21/Google-releases-Allo-an-AI-infused-messaging-app/"/>
     <id>https://vinc96.github.io/2016/09/21/Google-releases-Allo-an-AI-infused-messaging-app/</id>
     <published>2016-09-21T18:11:29.000Z</published>
-    <updated>2016-09-21T19:11:10.941Z</updated>
+    <updated>2017-02-10T03:07:15.000Z</updated>
     
     <content type="html"><![CDATA[<div class="video-container"><iframe src="//www.youtube.com/embed/WzV6mXIOVl4" frameborder="0" allowfullscreen></iframe></div>
 <a id="more"></a>
@@ -524,7 +524,7 @@
     <link href="https://vinc96.github.io/2016/09/18/One-Way-To-Handle-MIPS-OverFlow/"/>
     <id>https://vinc96.github.io/2016/09/18/One-Way-To-Handle-MIPS-OverFlow/</id>
     <published>2016-09-18T22:02:02.000Z</published>
-    <updated>2016-09-18T22:45:46.380Z</updated>
+    <updated>2017-02-10T03:07:15.000Z</updated>
     
     <content type="html"><![CDATA[<h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p>Exception handlers, also known as trap handlers or interrupt handlers, can easily be incorporated into a MIPS program. This guide is not intended to be comprehensive but provides the essential information for writing and using exception handlers.</p>
 <a id="more"></a>
@@ -572,7 +572,7 @@
     <link href="https://vinc96.github.io/2016/09/16/Dual-Booting-Or-Virtual-Machine-To-Learn-Linux/"/>
     <id>https://vinc96.github.io/2016/09/16/Dual-Booting-Or-Virtual-Machine-To-Learn-Linux/</id>
     <published>2016-09-16T20:03:56.000Z</published>
-    <updated>2016-09-17T07:31:58.216Z</updated>
+    <updated>2017-02-10T03:07:15.000Z</updated>
     
     <content type="html"><![CDATA[<blockquote><p>I would suggest you to go with virtual box, provided your machine has atleast 4Gb RAM.</p>
 <p>Because:</p>
@@ -618,7 +618,7 @@
     <link href="https://vinc96.github.io/2016/09/14/%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4%E5%9B%9B%E5%91%98%E5%B7%A5%E7%BC%96%E7%A8%8B%E6%8A%A2%E6%9C%88%E9%A5%BC%E8%A2%AB%E5%BC%80%E9%99%A4/"/>
     <id>https://vinc96.github.io/2016/09/14/阿里巴巴四员工编程抢月饼被开除/</id>
     <published>2016-09-15T05:05:38.000Z</published>
-    <updated>2016-09-17T07:32:04.608Z</updated>
+    <updated>2017-02-10T03:07:15.000Z</updated>
     
     <content type="html"><![CDATA[<p><img src="/img/alibaba_sml.jpg" alt="Alibaba"></p>
 <a id="more"></a>
@@ -667,7 +667,7 @@
     <link href="https://vinc96.github.io/2016/09/14/Death-Stranding-New-Details-from-TGS-2016-Open-World-Co-Op-4K-More/"/>
     <id>https://vinc96.github.io/2016/09/14/Death-Stranding-New-Details-from-TGS-2016-Open-World-Co-Op-4K-More/</id>
     <published>2016-09-14T07:20:21.000Z</published>
-    <updated>2016-09-17T07:32:10.432Z</updated>
+    <updated>2017-02-10T03:07:15.000Z</updated>
     
     <content type="html"><![CDATA[<div class="video-container"><iframe src="//www.youtube.com/embed/8kskVgv2Wu0" frameborder="0" allowfullscreen></iframe></div>
 <a id="more"></a>]]></content>
@@ -686,7 +686,7 @@
     <link href="https://vinc96.github.io/2016/09/12/BasicCSCheatSheet/"/>
     <id>https://vinc96.github.io/2016/09/12/BasicCSCheatSheet/</id>
     <published>2016-09-12T19:30:04.000Z</published>
-    <updated>2016-12-29T00:34:29.375Z</updated>
+    <updated>2017-02-10T03:07:15.000Z</updated>
     
     <content type="html"><![CDATA[<p><img src="/img/cheatSheet/JavaType.png" alt="JavaType"></p>
 <a id="more"></a>
@@ -709,7 +709,7 @@
     <link href="https://vinc96.github.io/2016/09/12/MarkDown-Cheat-Sheet/"/>
     <id>https://vinc96.github.io/2016/09/12/MarkDown-Cheat-Sheet/</id>
     <published>2016-09-12T19:18:23.000Z</published>
-    <updated>2016-09-17T07:32:21.849Z</updated>
+    <updated>2017-02-10T03:07:15.000Z</updated>
     
     <content type="html"><![CDATA[<h1 id="Typography"><a href="#Typography" class="headerlink" title="Typography"></a>Typography</h1><h2 id="Headings"><a href="#Headings" class="headerlink" title="Headings"></a>Headings</h2><p>Headings from <code>h1</code> through <code>h6</code> are constructed with a <code>#</code> for each level:</p>
 <figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="section"># h1 Heading</span></div><div class="line"><span class="section">## h2 Heading</span></div><div class="line"><span class="section">### h3 Heading</span></div><div class="line"><span class="section">#### h4 Heading</span></div><div class="line"><span class="section">##### h5 Heading</span></div><div class="line"><span class="section">###### h6 Heading</span></div></pre></td></tr></table></figure>
@@ -945,7 +945,7 @@ line 3 of code
     <link href="https://vinc96.github.io/2016/09/11/First-Article/"/>
     <id>https://vinc96.github.io/2016/09/11/First-Article/</id>
     <published>2016-09-12T02:18:00.000Z</published>
-    <updated>2016-09-17T07:31:39.527Z</updated>
+    <updated>2017-02-10T03:07:15.000Z</updated>
     
     <content type="html"><![CDATA[<div class="video-container"><iframe src="//www.youtube.com/embed/fgPAWUO0464" frameborder="0" allowfullscreen></iframe></div>
 <a id="more"></a>]]></content>
