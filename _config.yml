@@ -65,12 +65,12 @@ pagination_dir: page
 ## Themes: https://hexo.io/themes/
 theme: indigo
 
-# Deployment
-## Docs: https://hexo.io/docs/deployment.html
 deploy: 
   type: git
-  repo: https://github.com/vinc96/vinc96.github.io
   branch: master
+  repo: 
+    github: https://github.com/vinc96/vinc96.github.io
+    vinchengme: vinc1@vincheng.me:hexo.git,master
 
 # disqus 
 disqus_shortname: https-vinc96-github-io
