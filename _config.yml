@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: VinC Blog
-subtitle: Web Design
-description: _blank_description
-author: VinC Cheng
-language: en
+title: VinC的博客
+subtitle: 
+description: 2019 UofU
+author: VinCheng
+language: zh-Hans
 timezone:
 
 # URL
@@ -63,14 +63,14 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: indigo
+theme: next
 
 deploy: 
   type: git
   branch: master
   repo: 
     github: https://github.com/vinc96/vinc96.github.io
-    vinchengme: vinc1@vincheng.me:hexo.git,master
+    vinchengme: vinc1@vincheng.me:hexo.git
 
 # disqus 
 disqus_shortname: https-vinc96-github-io

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>VinC Blog</title>
-  <subtitle>Web Design</subtitle>
+  <title>VinC的博客</title>
+  
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://vinc96.github.io/"/>
@@ -9,7 +9,7 @@
   <id>https://vinc96.github.io/</id>
   
   <author>
-    <name>VinC Cheng</name>
+    <name>VinCheng</name>
     
   </author>
   
