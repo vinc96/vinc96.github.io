@@ -4,6 +4,85 @@
   
     
     <entry>
+      <title><![CDATA[DFS vs BFS vs Dijkstra's Algorithm || 广度优先搜索 vs 深度优先搜索 vs 戴克斯特拉算法]]></title>
+      <url>https://vinc96.github.io/2017/02/16/DFS-vs-BFS-vs-Dijkstra-s-Algorithm-%E5%B9%BF%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2-vs-%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2-vs-%E6%88%B4%E5%85%8B%E6%96%AF%E7%89%B9%E6%8B%89%E7%AE%97%E6%B3%95/</url>
+      <content type="html"><![CDATA[<p>G == Graph<br>V == Vertices in Graph&emsp;&emsp;E == Edges in Graph<br>b == begin vertex&emsp;&emsp;u == origin vertex<br>v == next vertex&emsp;&emsp;w == distance from u to v  </p>
+<pre><code>dfs(G)
+    for each v in V
+        visited[v] = false;
+    for each v in V
+        if !visited[v]
+            explore(G, v)
+
+explore(G, v)
+    visited[v] = true
+    for each (u, v) in E
+        if !visited[v]
+            explore(G, v)
+</code></pre><hr>
+<pre><code>bfs(G, b)
+    for each v in V
+        distance[v] = ∞
+        from[v] = null
+    distance[v] = 0
+
+    Q = new queue()
+    Q.enq(b)
+
+    while !Q.isEmpty()
+        u = Q.deq()
+        for each edge (u, v) in E
+            if distance[v] = ∞
+                distance[v] = distance[u] + 1
+                from[v] = u
+                Q.enq(v)
+</code></pre><hr>
+<pre><code>dijkstra(G, b)
+    for each v in V
+        distance[v] = ∞
+        from[v] = null
+    distance[v] = 0
+
+    PQ = new PriorityQueue(|V|)
+    PQ.insertOrUpdate(b, 0)
+
+    while !PQ.isEmpty()
+        u = PQ.deleteMin()
+        for each edge (u, v, w) in E
+            if distance[v] &gt; distance[u] + w
+                distance[v] = distance[u] + w
+                from[v] = u
+                PQ.insertOrUpdate(v, distance[v])
+</code></pre>]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[《智能时代》(吴军) 笔记 2017/02/12]]></title>
+      <url>https://vinc96.github.io/2017/02/12/%E3%80%8A%E6%99%BA%E8%83%BD%E6%97%B6%E4%BB%A3%E3%80%8B-%E5%90%B4%E5%86%9B-%E7%AC%94%E8%AE%B0-2017-02-12/</url>
+      <content type="html"><![CDATA[<center> <h1>《智能时代》笔记 </h1> </center>
+
+<p><br></p>
+<p>1.数据从有计算机算起到现在也有70年历史了，从摩尔定律的提出到现在也有50年了。这几十年来,全球数据量按每年平均40%的速度增长</p>
+<hr>
+<p>2.简洁的公式给出的确定性的规律是由大量观察数据所验证的。现在我们面对的是更复杂的自然和社会现象，多维度和多变量导致很大的不确定性，虽然还不能用解析式来说明因果关系，但如果从足够多的数据中发现相关性也能把握事物发展的轨迹，这就是数据密集型科学产生的背景。</p>
+<hr>
+<p>3.可以说，大数据与机器智能相伴而生，促进物联网从感知到认知并智能决策的升华，催生了智能化时代。</p>
+<hr>
+<p>4.数据的范畴比数字要大得多。互联网上的任何内容，比如文字、图片和视频都是数据；医院里包括医学影像在内的所有档案也是数据；公司和工厂里的各种设计图纸也是数据;出土文物上的文字、图示，甚至它们的尺寸、材料，也都是数据；甚至宇宙在形成过程中也留下了许多数据，比如宇宙中的基本粒子数量。</p>
+<hr>
+<p>5.不过，数据和信息还是稍有不同，虽然它最大的作用在于承载信息，但是并非所有的数据都承载了有意义的信息。数据本身是人造物，因此它们可以被随意制造，甚至可以被伪造。没有信息的数据通常没有太大意义，人们也不太关心，因此这些数据不是本书想要讨论的重点。</p>
+<hr>
+<p>6.另外，我们还需要强调，那些有用的数据、毫无意义的数据和伪造的数据常常是混在一起的，后面两种数据无疑会干扰我们从数据中获取有用的信息，因此如何处理数据，过滤掉没有用的噪声和删除有害的数据，从而获取数据背后的信息，就成为技术甚至是一种艺术。</p>
+<hr>
+<p>7.知识比信息更高一个层次，也更加抽象，它具有系统性的特征。</p>
+<hr>
+<p>8.人类的进步就是靠使用知识不断地改变我们的生活和周围的世界，而数据是知识的基础。在下一节里我们不妨看看人类是如何利用数据改变世界的。</p>
+<hr>
+<p>9.经典案例：2009年，人类发现一种新的流感病毒一甲型H1N1禽流感病毒，短短的一个月内由该病毒导致的疾病就在全球迅速蔓延开来。Google工程师使用网民的搜索记录预测流感蔓延程度，准确率97%。</p>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[Matlab Cheat Sheet (Matlab备忘表)]]></title>
       <url>https://vinc96.github.io/2017/01/09/Matlab-Cheat-Sheet-Matlab%E5%A4%87%E5%BF%98%E8%A1%A8/</url>
       <content type="html"><![CDATA[<p>Download Cheat Sheet:&ensp;&ensp;<a href="/img/cheatSheet/Matlab-Cheatsheet.pdf" download=""><strong>PDF version</strong></a>&ensp;&ensp;<a href="/img/cheatSheet/Matlab-Cheatsheet.jpg" download=""><strong>JPG version (3253 x 2468)</strong></a><br>More Resources:&ensp;&ensp;<a href="https://www.coursera.org/learn/machine-learning/supplement/Mlf3e/more-octave-matlab-resources" target="_blank" rel="external"><strong>Matlab Introduction and Basic Command (Coursera account Required)</strong></a>&ensp;&ensp;<a href="http://www.mathworks.com/index.html?s_tid=gn_logo" target="_blank" rel="external"><strong>Matlab Documentation</strong></a></p>
