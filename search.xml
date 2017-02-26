@@ -4,6 +4,20 @@
   
     
     <entry>
+      <title><![CDATA[Vim Cheat Sheet | Making decision between Vim/Emacs]]></title>
+      <url>https://vinc96.github.io/2017/02/25/vim-cheatsheet-emacs-vs-vim/</url>
+      <content type="html"><![CDATA[<p><center><a href="/img/cheatSheet/vim-cheatsheet.svg" download=""><strong>Download Vim Cheat Sheet</strong></a></center><br><img src="/img/cheatSheet/vim-cheatsheet.png" alt="vim cheatsheet">  </p>
+<a id="more"></a>
+<hr>
+<h1 id="Making-decision-between-Vim-Emacs"><a href="#Making-decision-between-Vim-Emacs" class="headerlink" title="Making decision between Vim/Emacs"></a>Making decision between Vim/Emacs</h1><h4 id="If-you-are-a-Linux-beginner-and-can’t-make-a-choice-between-vim-and-emacs-give-Spacemacs-a-try"><a href="#If-you-are-a-Linux-beginner-and-can’t-make-a-choice-between-vim-and-emacs-give-Spacemacs-a-try" class="headerlink" title="If you are a Linux beginner and can’t make a choice between vim and emacs, give Spacemacs a try."></a>If you are a Linux beginner and can’t make a choice between vim and emacs, give <a href="https://github.com/syl20bnr/spacemacs/tree/master" target="_blank" rel="external"><strong>Spacemacs</strong></a> a try.</h4><h4 id="Basically-Spacemacs-is-an-emacs-package-that-combines-the-advantage-of-both-vim-and-emacs"><a href="#Basically-Spacemacs-is-an-emacs-package-that-combines-the-advantage-of-both-vim-and-emacs" class="headerlink" title="Basically, Spacemacs is *an emacs package that combines the advantage of both vim and emacs*."></a>Basically, <strong>Spacemacs</strong> is *an emacs package that combines the advantage of both vim and emacs*.</h4><h4 id="【Resources】"><a href="#【Resources】" class="headerlink" title="【Resources】:"></a>【Resources】:</h4><ul>
+<li><a href="https://github.com/syl20bnr/spacemacs/tree/master" target="_blank" rel="external">Spacemacs GitHub</a></li>
+<li><a href="https://github.com/BenjaminRothschild/Spacemacs-rocks" target="_blank" rel="external">Chinese中文 Tutorial: Spacemacs Rock</a></li>
+<li><a href="https://www.youtube.com/watch?v=JWD1Fpdd4Pc" target="_blank" rel="external">Evil Mode: Or, How I Learned to Stop Worrying and Love Emacs</a></li>
+</ul>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[《智能时代》(吴军) 笔记2 2017/02/18]]></title>
       <url>https://vinc96.github.io/2017/02/18/%E3%80%8A%E6%99%BA%E8%83%BD%E6%97%B6%E4%BB%A3%E3%80%8B-%E5%90%B4%E5%86%9B-%E7%AC%94%E8%AE%B02-2017-02-18/</url>
       <content type="html"><![CDATA[<center> <h1>《智能时代》笔记2</h1> </center>

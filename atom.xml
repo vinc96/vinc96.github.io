@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://vinc96.github.io/"/>
-  <updated>2017-02-18T19:17:14.966Z</updated>
+  <updated>2017-02-26T07:08:14.874Z</updated>
   <id>https://vinc96.github.io/</id>
   
   <author>
@@ -14,6 +14,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Vim Cheat Sheet | Making decision between Vim/Emacs</title>
+    <link href="https://vinc96.github.io/2017/02/25/vim-cheatsheet-emacs-vs-vim/"/>
+    <id>https://vinc96.github.io/2017/02/25/vim-cheatsheet-emacs-vs-vim/</id>
+    <published>2017-02-26T06:37:27.000Z</published>
+    <updated>2017-02-26T07:08:14.874Z</updated>
+    
+    <content type="html"><![CDATA[<p><center><a href="/img/cheatSheet/vim-cheatsheet.svg" download=""><strong>Download Vim Cheat Sheet</strong></a></center><br><img src="/img/cheatSheet/vim-cheatsheet.png" alt="vim cheatsheet">  </p>
+<a id="more"></a>
+<hr>
+<h1 id="Making-decision-between-Vim-Emacs"><a href="#Making-decision-between-Vim-Emacs" class="headerlink" title="Making decision between Vim/Emacs"></a>Making decision between Vim/Emacs</h1><h4 id="If-you-are-a-Linux-beginner-and-can’t-make-a-choice-between-vim-and-emacs-give-Spacemacs-a-try"><a href="#If-you-are-a-Linux-beginner-and-can’t-make-a-choice-between-vim-and-emacs-give-Spacemacs-a-try" class="headerlink" title="If you are a Linux beginner and can’t make a choice between vim and emacs, give Spacemacs a try."></a>If you are a Linux beginner and can’t make a choice between vim and emacs, give <a href="https://github.com/syl20bnr/spacemacs/tree/master" target="_blank" rel="external"><strong>Spacemacs</strong></a> a try.</h4><h4 id="Basically-Spacemacs-is-an-emacs-package-that-combines-the-advantage-of-both-vim-and-emacs"><a href="#Basically-Spacemacs-is-an-emacs-package-that-combines-the-advantage-of-both-vim-and-emacs" class="headerlink" title="Basically, Spacemacs is *an emacs package that combines the advantage of both vim and emacs*."></a>Basically, <strong>Spacemacs</strong> is *an emacs package that combines the advantage of both vim and emacs*.</h4><h4 id="【Resources】"><a href="#【Resources】" class="headerlink" title="【Resources】:"></a>【Resources】:</h4><ul>
+<li><a href="https://github.com/syl20bnr/spacemacs/tree/master" target="_blank" rel="external">Spacemacs GitHub</a></li>
+<li><a href="https://github.com/BenjaminRothschild/Spacemacs-rocks" target="_blank" rel="external">Chinese中文 Tutorial: Spacemacs Rock</a></li>
+<li><a href="https://www.youtube.com/watch?v=JWD1Fpdd4Pc" target="_blank" rel="external">Evil Mode: Or, How I Learned to Stop Worrying and Love Emacs</a></li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;center&gt;&lt;a href=&quot;/img/cheatSheet/vim-cheatsheet.svg&quot; download&gt;&lt;strong&gt;Download Vim Cheat Sheet&lt;/strong&gt;&lt;/a&gt;&lt;/center&gt;&lt;br&gt;&lt;img src=&quot;/img/cheatSheet/vim-cheatsheet.png&quot; alt=&quot;vim cheatsheet&quot;&gt;  &lt;/p&gt;
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>《智能时代》(吴军) 笔记2 2017/02/18</title>
@@ -855,25 +881,6 @@ explore(G, v)
     <summary type="html">
     
       &lt;p&gt;&lt;img src=&quot;/img/icon/alibaba_sml.jpg&quot; alt=&quot;Alibaba&quot;&gt;&lt;/p&gt;
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Death Stranding - New Details from TGS 2016: Open World, Co-Op, 4K, &amp; More!</title>
-    <link href="https://vinc96.github.io/2016/09/14/Death-Stranding-New-Details-from-TGS-2016-Open-World-Co-Op-4K-More/"/>
-    <id>https://vinc96.github.io/2016/09/14/Death-Stranding-New-Details-from-TGS-2016-Open-World-Co-Op-4K-More/</id>
-    <published>2016-09-14T07:20:21.000Z</published>
-    <updated>2016-09-17T07:32:10.432Z</updated>
-    
-    <content type="html"><![CDATA[<div class="video-container"><iframe src="//www.youtube.com/embed/8kskVgv2Wu0" frameborder="0" allowfullscreen></iframe></div>
-<a id="more"></a>]]></content>
-    
-    <summary type="html">
-    
-      &lt;div class=&quot;video-container&quot;&gt;&lt;iframe src=&quot;//www.youtube.com/embed/8kskVgv2Wu0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
     
     </summary>
     
