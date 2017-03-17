@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://vinc96.github.io/"/>
-  <updated>2017-03-17T07:59:50.594Z</updated>
+  <updated>2017-03-17T08:06:14.985Z</updated>
   <id>https://vinc96.github.io/</id>
   
   <author>
@@ -16,11 +16,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Resolve Mint 18.1 Suspend Problems on Macbook6,2</title>
+    <title>Resolve Macbook6,2 Suspend Problems on Mint 18.1</title>
     <link href="https://vinc96.github.io/2017/03/17/Resolve-Mint-18-1-Suspend-Problems-on-Macbook6-2/"/>
     <id>https://vinc96.github.io/2017/03/17/Resolve-Mint-18-1-Suspend-Problems-on-Macbook6-2/</id>
     <published>2017-03-17T07:25:26.000Z</published>
-    <updated>2017-03-17T07:59:50.594Z</updated>
+    <updated>2017-03-17T08:06:14.985Z</updated>
     
     <content type="html"><![CDATA[<blockquote>
 <p><strong>Macbook Air 6,2 has a few suspend issues with Linux Mint 18.1. Here is my solution resolving these Macbook suspend problems. Currently these solutions works pretty well for me.</strong></p>
