@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://vinc96.github.io/"/>
-  <updated>2017-03-17T08:06:14.985Z</updated>
+  <updated>2017-03-17T21:08:19.355Z</updated>
   <id>https://vinc96.github.io/</id>
   
   <author>
@@ -20,33 +20,43 @@
     <link href="https://vinc96.github.io/2017/03/17/Resolve-Mint-18-1-Suspend-Problems-on-Macbook6-2/"/>
     <id>https://vinc96.github.io/2017/03/17/Resolve-Mint-18-1-Suspend-Problems-on-Macbook6-2/</id>
     <published>2017-03-17T07:25:26.000Z</published>
-    <updated>2017-03-17T08:06:14.985Z</updated>
+    <updated>2017-03-17T21:08:19.355Z</updated>
     
     <content type="html"><![CDATA[<blockquote>
 <p><strong>Macbook Air 6,2 has a few suspend issues with Linux Mint 18.1. Here is my solution resolving these Macbook suspend problems. Currently these solutions works pretty well for me.</strong></p>
 </blockquote>
-<p><br></p>
 <ol>
-<li>Use <a href="https://github.com/patjak/mba6x_bl" target="_blank" rel="external">mba6x_bl</a> if your MBA has black screen after suspended. <a href="https://github.com/patjak/mba6x_bl" target="_blank" rel="external">Follow their instruction</a>.</li>
-<li><p>Use <a href="http://askubuntu.com/a/768544/666397" target="_blank" rel="external">Bob-El’s solution</a> to solve MBA can’t suspend after lid closed. </p>
+<li>Use <a href="https://github.com/patjak/mba6x_bl" target="_blank" rel="external">mba6x_bl</a> if your Macbook has black screen after suspended. <a href="https://github.com/patjak/mba6x_bl" target="_blank" rel="external">Follow their instruction</a>.</li>
+<li><p>Use <a href="http://askubuntu.com/a/768544/666397" target="_blank" rel="external">Bob-El’s solution</a> to resolve Macbook can’t suspend after lid closed. </p>
 <ul>
-<li>backup and open <code>/etc/acpi/events/powerbtn</code><br>  <code>sudo cp /etc/acpi/events/powerbtn /etc/acpi/events/powerbtn_bak</code><br>  <code>sudo nano /etc/acpi/events/powerbtn</code></li>
-<li><p>replace content of <code>powerbtn</code> with text below  </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"># /etc/acpi/events/lidbtn</div><div class="line"># This is called when the user closes the lid and calls  </div><div class="line"># /etc/acpi/lidbtn.sh for further processing.  </div><div class="line"># Optionally you can specify the placeholder %e. It will pass  </div><div class="line"># through the whole kernel event message to the program you&apos;ve  </div><div class="line"># specified.  </div><div class="line"># We need to react on &quot;button lid.*&quot; and &quot;button/lid.*&quot; because  </div><div class="line"># of kernel changes.  </div><div class="line">event=button[ /]lid  </div><div class="line">action=/etc/acpi/lidbtn.sh</div></pre></td></tr></table></figure>
+<li>backup and open /etc/acpi/events/powerbtn<br>  <code>sudo cp /etc/acpi/events/powerbtn /etc/acpi/events/powerbtn_bak</code><br>  <code>sudo nano /etc/acpi/events/powerbtn</code></li>
+<li><p>replace content of powerbtn with text below</p>
+<blockquote>
+<p># /etc/acpi/events/lidbtn<br>  # This is called when the user closes the lid and calls<br>  # /etc/acpi/lidbtn.sh for further processing.<br>  # Optionally you can specify the placeholder %e. It will pass<br>  # through the whole kernel event message to the program you’ve<br>  # specified.<br>  # We need to react on “button lid.<em>“ and “button/lid.</em>“ because<br>  # of kernel changes.<br>  event=button[ /]lid<br>  action=/etc/acpi/lidbtn.sh  </p>
+</blockquote>
 </li>
-<li><p>create <code>/etc/acpi/lidbtn.sh</code><br><code>sudo nano /etc/acpi/lidbtn.sh</code></p>
+<li><p>create /etc/acpi/lidbtn.sh<br><code>sudo nano /etc/acpi/lidbtn.sh</code></p>
 </li>
-<li>place the following text into <code>lidbtn.sh</code><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">#!/bin/bash</div><div class="line">if grep -q closed /proc/acpi/button/lid/*/state</div><div class="line">then</div><div class="line">    /usr/sbin/pm-suspend</div><div class="line">fi</div></pre></td></tr></table></figure>
-</li>
+<li>place the following text into it<pre><code>&lt;pre&gt;&lt;code&gt;#!/bin/bash
+if grep -q closed /proc/acpi/button/lid/*/state
+then
+    /usr/sbin/pm-suspend
+fi&lt;/code&gt;&lt;/pre&gt;
+</code></pre></li>
 </ul>
 </li>
-<li><p>Fix MBA won’t suspend when power connected.<br>Open Power Management -&gt; On AC Power -&gt; Actions -&gt; When laptop lid is closed, choose Blank screen. This will keep MBA suspend when connecting to power.  </p>
+<li>Fix Macbook sometime won’t suspend when power connected.<br>Open Power Management -&gt; On AC Power -&gt; Actions -&gt; When laptop lid is closed, choose Blank screen. This will keep Macbook suspend when power connected.  </li>
+<li><p>Fix keyboard backlight level always being set to highest after wake up. <a href="http://askubuntu.com/a/707873/666397" target="_blank" rel="external"><strong>Detail</strong></a></p>
+<ul>
+<li><p>Disable keyboard light auto-adjust.<br><code>sudo nano /etc/dbus-1/system.d/org.freedesktop.UPower.conf</code><br>and change <code>&lt;allow</code> to <code>&lt;deny</code> in the following line:</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&lt;allow send_destination=&quot;org.freedesktop.UPower&quot;</div><div class="line">send_interface=&quot;org.freedesktop.UPower.KbdBacklight&quot;/&gt;</div></pre></td></tr></table></figure>
+</li>
+<li><p>Add alias function to so we can at least change keyboard backlight manually.<br>Open your bash config file like .bashrc or .zshrc under home directory (in my case I use zsh, so I have .zshrc), add the following function to the end of file:<br><code>kbd() { echo &quot;$@&quot; | sudo /usr/bin/tee -a &quot;/sys/class/leds/smc::kbd_backlight/brightness&quot; }</code><br>Now you have a function that can change keyboard backlight. Example: <code>kdb 0</code> will turn off the keyboard backlight. <strong>The integer parameter has to be an integer between 0 and 255.</strong></p>
+</li>
+<li><strong>Solution 4 will disable the keybaord backlight shortcut on Macbook due to modified <code>org.freedesktop.UPower</code>, but surely this solution is good enough, and you can find many workaround to bring these shortcut back</strong></li>
+</ul>
 </li>
 </ol>
-<p><br></p>
-<hr>
-<blockquote>
-<h4 id="The-only-problem-I-have-noticed-about-this-solution-is-when-MBA-suspended-with-power-connected-its-keyboard-light-will-be-automatically-on-But-other-than-that-everything-works-well"><a href="#The-only-problem-I-have-noticed-about-this-solution-is-when-MBA-suspended-with-power-connected-its-keyboard-light-will-be-automatically-on-But-other-than-that-everything-works-well" class="headerlink" title="The only problem I have noticed about this solution is when MBA suspended with power connected, its keyboard light will be automatically on. But other than that, everything works well."></a>The only problem I have noticed about this solution is when MBA suspended <strong>with power connected</strong>, its keyboard light will be automatically on. But other than that, everything works well.</h4></blockquote>
 ]]></content>
     
     <summary type="html">
@@ -60,19 +70,19 @@
   </entry>
   
   <entry>
-    <title>解决Mint18.1系统下，Macbook6,2无法进入suspend模式（合盖后无法锁定机子）</title>
+    <title>解决Mint18.1系统下，Macbook6,2无法进入suspend模式等相关问题（合盖后无法锁定机子）</title>
     <link href="https://vinc96.github.io/2017/03/17/%E8%A7%A3%E5%86%B3Mint18-1%E7%B3%BB%E7%BB%9F%E4%B8%8B%EF%BC%8CMacbook-Air6-2%E6%97%A0%E6%B3%95%E8%BF%9B%E5%85%A5Suspend%E6%A8%A1%E5%BC%8F/"/>
     <id>https://vinc96.github.io/2017/03/17/解决Mint18-1系统下，Macbook-Air6-2无法进入Suspend模式/</id>
     <published>2017-03-17T07:10:07.000Z</published>
-    <updated>2017-03-17T08:02:05.586Z</updated>
+    <updated>2017-03-17T21:08:07.075Z</updated>
     
     <content type="html"><![CDATA[<blockquote>
-<p>在Mint18.1系统下，Macbook Air的suspend模式存在一些问题。这里suspend模式指的是Macbook Air（MBA）合上盖后自动锁定屏幕并且黑屏的模式。以下是我的解决方案 :-)</p>
+<p>在Mint18.1系统下，Macbook Air的suspend模式存在一些问题。这里suspend模式指的是Macbook Air合上盖后自动锁定屏幕并且黑屏的模式。以下是我的解决方案 :-)</p>
 </blockquote>
 <p><br></p>
 <ol>
-<li>如果MBA在合上盖后再打开，屏幕没反应（注意MBA其实是黑屏了，并没有卡死），请使用 <a href="https://github.com/patjak/mba6x_bl" target="_blank" rel="external">mba6x_bl</a> 修复，请使用他们的 <a href="https://github.com/patjak/mba6x_bl" target="_blank" rel="external">指南</a>。</li>
-<li><p>如果MBA合上盖后不能正常进入suspend模式，请使用 <a href="http://askubuntu.com/a/768544/666397" target="_blank" rel="external">Bob-El’s solution</a> 的方案。 </p>
+<li>如果Macbook在合上盖后再打开，屏幕没反应（注意Macbook其实是黑屏了，并没有卡死），请使用 <a href="https://github.com/patjak/mba6x_bl" target="_blank" rel="external">mba6x_bl</a> 修复，请使用他们的 <a href="https://github.com/patjak/mba6x_bl" target="_blank" rel="external">指南</a>。</li>
+<li><p>如果Macbook合上盖后不能正常进入suspend模式，请使用 <a href="http://askubuntu.com/a/768544/666397" target="_blank" rel="external">Bob-El’s solution</a> 的方案。 </p>
 <ul>
 <li>备份并开启 /etc/acpi/events/powerbtn<br>  <code>sudo cp /etc/acpi/events/powerbtn /etc/acpi/events/powerbtn_bak</code><br>  <code>sudo nano /etc/acpi/events/powerbtn</code></li>
 <li><p>用以下代码覆盖文件</p>
@@ -90,20 +100,27 @@ fi&lt;/code&gt;&lt;/pre&gt;
 </code></pre></li>
 </ul>
 </li>
-<li>如果MBA在充电时无法进入suspend模式，请使用以下设置。<br>打开 Power Management -&gt; On AC Power -&gt; Actions -&gt; When laptop lid is closed, 选择 Blank screen。更改设置后，MBA合盖后会进入suspend模式。  </li>
+<li><p>如果Macbook在充电时无法进入suspend模式，请使用以下设置。<br>打开 Power Management -&gt; On AC Power -&gt; Actions -&gt; When laptop lid is closed, 选择 Blank screen。更改设置后，Macbook合盖后会进入suspend模式。  </p>
+</li>
+<li><p>如果键盘背光运行不正常，可以使用一下方案。 <a href="http://askubuntu.com/a/707873/666397" target="_blank" rel="external"><strong>详述</strong></a></p>
+<ul>
+<li><p>禁止键盘背光自动调节<br><code>sudo nano /etc/dbus-1/system.d/org.freedesktop.UPower.conf</code><br>，找到下列代码，并把 <code>&lt;allow</code> 替换为 <code>&lt;deny</code> ：</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&lt;allow send_destination=&quot;org.freedesktop.UPower&quot;</div><div class="line">send_interface=&quot;org.freedesktop.UPower.KbdBacklight&quot;/&gt;</div></pre></td></tr></table></figure>
+</li>
+<li><p>添加一个命令行函数，用来手动更改键盘背光。<br>打开你的shell配置文档<code>~/.bashrc</code>或者<code>~/.zshrc</code>（我用zsh，所以是~/.zshrc），把以下代码粘贴至文件末尾（kbd是keyboard的缩写）:<br><code>kbd() { echo &quot;$@&quot; | sudo /usr/bin/tee -a &quot;/sys/class/leds/smc::kbd_backlight/brightness&quot; }</code><br>现在你就有一个可以控制键盘背光的函数了，使用例子: 在命令行（terminal）输入<code>kdb 0</code> 即可关闭键盘光源，<strong>数字参数的范围是0-255。</strong></p>
+</li>
+<li><strong>解决方案4的一个缺点是Macbook的键盘背光快捷键会因为<code>org.freedesktop.UPower.conf</code>文件的更改而失效。但是这个解决方案已经足够好了，并且通过谷歌，应该能找到不少的变通方案。</strong></li>
+</ul>
+</li>
 </ol>
-<p><br></p>
-<blockquote>
-<p>以上的解决方案有一个问题，当MBA在充电时，suspend模式下MBA的键盘背光会自动开启。这个问题让人很不舒服，但是幸运的是suspend模式的问题已经完全解决了！<em>´∀<code>)´∀</code>)</em>´∀<code>)*´∀</code>)</p>
-</blockquote>
 ]]></content>
     
     <summary type="html">
     
       &lt;blockquote&gt;
-&lt;p&gt;在Mint18.1系统下，Macbook Air的suspend模式存在一些问题。这里suspend模式指的是Macbook Air（MBA）合上盖后自动锁定屏幕并且黑屏的模式。以下是我的解决方案 :-)&lt;/p&gt;
+&lt;p&gt;在Mint18.1系统下，Macbook Air的suspend模式存在一些问题。这里suspend模式指的是Macbook Air合上盖后自动锁定屏幕并且黑屏的模式。以下是我的解决方案 :-)&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;
+&lt;p&gt;&lt;br&gt;&lt;
     
     </summary>
     
