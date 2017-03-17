@@ -35,7 +35,7 @@
     </entry>
     
     <entry>
-      <title><![CDATA[解决Mint18.1系统下，Macbook Air6,2无法进入suspend模式（合盖后无法锁定机子）]]></title>
+      <title><![CDATA[解决Mint18.1系统下，Macbook6,2无法进入suspend模式（合盖后无法锁定机子）]]></title>
       <url>https://vinc96.github.io/2017/03/17/%E8%A7%A3%E5%86%B3Mint18-1%E7%B3%BB%E7%BB%9F%E4%B8%8B%EF%BC%8CMacbook-Air6-2%E6%97%A0%E6%B3%95%E8%BF%9B%E5%85%A5Suspend%E6%A8%A1%E5%BC%8F/</url>
       <content type="html"><![CDATA[<blockquote>
 <p>在Mint18.1系统下，Macbook Air的suspend模式存在一些问题。这里suspend模式指的是Macbook Air（MBA）合上盖后自动锁定屏幕并且黑屏的模式。以下是我的解决方案 :-)</p>
