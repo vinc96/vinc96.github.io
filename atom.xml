@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://vinc96.github.io/"/>
-  <updated>2017-02-26T07:08:14.874Z</updated>
+  <updated>2017-03-17T07:59:50.594Z</updated>
   <id>https://vinc96.github.io/</id>
   
   <author>
@@ -16,16 +16,111 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Resolve Mint 18.1 Suspend Problems on Macbook6,2</title>
+    <link href="https://vinc96.github.io/2017/03/17/Resolve-Mint-18-1-Suspend-Problems-on-Macbook6-2/"/>
+    <id>https://vinc96.github.io/2017/03/17/Resolve-Mint-18-1-Suspend-Problems-on-Macbook6-2/</id>
+    <published>2017-03-17T07:25:26.000Z</published>
+    <updated>2017-03-17T07:59:50.594Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote>
+<p><strong>Macbook Air 6,2 has a few suspend issues with Linux Mint 18.1. Here is my solution resolving these Macbook suspend problems. Currently these solutions works pretty well for me.</strong></p>
+</blockquote>
+<p><br></p>
+<ol>
+<li>Use <a href="https://github.com/patjak/mba6x_bl" target="_blank" rel="external">mba6x_bl</a> if your MBA has black screen after suspended. <a href="https://github.com/patjak/mba6x_bl" target="_blank" rel="external">Follow their instruction</a>.</li>
+<li><p>Use <a href="http://askubuntu.com/a/768544/666397" target="_blank" rel="external">Bob-El’s solution</a> to solve MBA can’t suspend after lid closed. </p>
+<ul>
+<li>backup and open <code>/etc/acpi/events/powerbtn</code><br>  <code>sudo cp /etc/acpi/events/powerbtn /etc/acpi/events/powerbtn_bak</code><br>  <code>sudo nano /etc/acpi/events/powerbtn</code></li>
+<li><p>replace content of <code>powerbtn</code> with text below  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"># /etc/acpi/events/lidbtn</div><div class="line"># This is called when the user closes the lid and calls  </div><div class="line"># /etc/acpi/lidbtn.sh for further processing.  </div><div class="line"># Optionally you can specify the placeholder %e. It will pass  </div><div class="line"># through the whole kernel event message to the program you&apos;ve  </div><div class="line"># specified.  </div><div class="line"># We need to react on &quot;button lid.*&quot; and &quot;button/lid.*&quot; because  </div><div class="line"># of kernel changes.  </div><div class="line">event=button[ /]lid  </div><div class="line">action=/etc/acpi/lidbtn.sh</div></pre></td></tr></table></figure>
+</li>
+<li><p>create <code>/etc/acpi/lidbtn.sh</code><br><code>sudo nano /etc/acpi/lidbtn.sh</code></p>
+</li>
+<li>place the following text into <code>lidbtn.sh</code><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">#!/bin/bash</div><div class="line">if grep -q closed /proc/acpi/button/lid/*/state</div><div class="line">then</div><div class="line">    /usr/sbin/pm-suspend</div><div class="line">fi</div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>Fix MBA won’t suspend when power connected.<br>Open Power Management -&gt; On AC Power -&gt; Actions -&gt; When laptop lid is closed, choose Blank screen. This will keep MBA suspend when connecting to power.  </p>
+</li>
+</ol>
+<p><br></p>
+<hr>
+<blockquote>
+<h4 id="The-only-problem-I-have-noticed-about-this-solution-is-when-MBA-suspended-with-power-connected-its-keyboard-light-will-be-automatically-on-But-other-than-that-everything-works-well"><a href="#The-only-problem-I-have-noticed-about-this-solution-is-when-MBA-suspended-with-power-connected-its-keyboard-light-will-be-automatically-on-But-other-than-that-everything-works-well" class="headerlink" title="The only problem I have noticed about this solution is when MBA suspended with power connected, its keyboard light will be automatically on. But other than that, everything works well."></a>The only problem I have noticed about this solution is when MBA suspended <strong>with power connected</strong>, its keyboard light will be automatically on. But other than that, everything works well.</h4></blockquote>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Macbook Air 6,2 has a few suspend issues with Linux Mint 18.1. Here is my solution resolving these Macbook suspend p
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>解决Mint18.1系统下，Macbook Air6,2无法进入suspend模式（合盖后无法锁定机子）</title>
+    <link href="https://vinc96.github.io/2017/03/17/%E8%A7%A3%E5%86%B3Mint18-1%E7%B3%BB%E7%BB%9F%E4%B8%8B%EF%BC%8CMacbook-Air6-2%E6%97%A0%E6%B3%95%E8%BF%9B%E5%85%A5Suspend%E6%A8%A1%E5%BC%8F/"/>
+    <id>https://vinc96.github.io/2017/03/17/解决Mint18-1系统下，Macbook-Air6-2无法进入Suspend模式/</id>
+    <published>2017-03-17T07:10:07.000Z</published>
+    <updated>2017-03-17T07:59:51.122Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote>
+<p>在Mint18.1系统下，Macbook Air的suspend模式存在一些问题。这里suspend模式指的是Macbook Air（MBA）合上盖后自动锁定屏幕并且黑屏的模式。以下是我的解决方案 :-)</p>
+</blockquote>
+<p><br></p>
+<ol>
+<li>如果MBA在合上盖后再打开，屏幕没反应（注意MBA其实是黑屏了，并没有卡死），请使用 <a href="https://github.com/patjak/mba6x_bl" target="_blank" rel="external">mba6x_bl</a> 修复，请使用他们的 <a href="https://github.com/patjak/mba6x_bl" target="_blank" rel="external">指南</a>。</li>
+<li><p>如果MBA合上盖后不能正常进入suspend模式，请使用 <a href="http://askubuntu.com/a/768544/666397" target="_blank" rel="external">Bob-El’s solution</a> 的方案。 </p>
+<ul>
+<li>备份并开启 /etc/acpi/events/powerbtn<br>  <code>sudo cp /etc/acpi/events/powerbtn /etc/acpi/events/powerbtn_bak</code><br>  <code>sudo nano /etc/acpi/events/powerbtn</code></li>
+<li><p>用以下代码覆盖文件</p>
+<blockquote>
+<p># /etc/acpi/events/lidbtn<br># This is called when the user closes the lid and calls<br># /etc/acpi/lidbtn.sh for further processing.<br># Optionally you can specify the placeholder %e. It will pass<br># through the whole kernel event message to the program you’ve<br># specified.<br># We need to react on “button lid.<em>“ and “button/lid.</em>“ because<br># of kernel changes.<br>event=button[ /]lid<br>action=/etc/acpi/lidbtn.sh  </p>
+</blockquote>
+</li>
+<li><p>创建文件 /etc/acpi/lidbtn.sh<br><code>sudo nano /etc/acpi/lidbtn.sh</code></p>
+</li>
+<li>把以下代码粘贴进 <code>lidbtn.sh</code><pre><code>&lt;pre&gt;&lt;code&gt;#!/bin/bash
+if grep -q closed /proc/acpi/button/lid/*/state
+then
+    /usr/sbin/pm-suspend
+fi&lt;/code&gt;&lt;/pre&gt;
+</code></pre></li>
+</ul>
+</li>
+<li>如果MBA在充电时无法进入suspend模式，请使用以下设置。<br>打开 Power Management -&gt; On AC Power -&gt; Actions -&gt; When laptop lid is closed, 选择 Blank screen。更改设置后，MBA合盖后会进入suspend模式。  </li>
+</ol>
+<p><br></p>
+<blockquote>
+<p>以上的解决方案有一个问题，当MBA在充电时，suspend模式下MBA的键盘背光会自动开启。这个问题让人很不舒服，但是幸运的是suspend模式的问题已经完全解决了！<em>´∀<code>)´∀</code>)</em>´∀<code>)*´∀</code>)</p>
+</blockquote>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;在Mint18.1系统下，Macbook Air的suspend模式存在一些问题。这里suspend模式指的是Macbook Air（MBA）合上盖后自动锁定屏幕并且黑屏的模式。以下是我的解决方案 :-)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>Vim Cheat Sheet | Making decision between Vim/Emacs</title>
     <link href="https://vinc96.github.io/2017/02/25/vim-cheatsheet-emacs-vs-vim/"/>
     <id>https://vinc96.github.io/2017/02/25/vim-cheatsheet-emacs-vs-vim/</id>
     <published>2017-02-26T06:37:27.000Z</published>
-    <updated>2017-02-26T07:08:14.874Z</updated>
+    <updated>2017-02-26T07:14:03.145Z</updated>
     
     <content type="html"><![CDATA[<p><center><a href="/img/cheatSheet/vim-cheatsheet.svg" download=""><strong>Download Vim Cheat Sheet</strong></a></center><br><img src="/img/cheatSheet/vim-cheatsheet.png" alt="vim cheatsheet">  </p>
 <a id="more"></a>
 <hr>
-<h1 id="Making-decision-between-Vim-Emacs"><a href="#Making-decision-between-Vim-Emacs" class="headerlink" title="Making decision between Vim/Emacs"></a>Making decision between Vim/Emacs</h1><h4 id="If-you-are-a-Linux-beginner-and-can’t-make-a-choice-between-vim-and-emacs-give-Spacemacs-a-try"><a href="#If-you-are-a-Linux-beginner-and-can’t-make-a-choice-between-vim-and-emacs-give-Spacemacs-a-try" class="headerlink" title="If you are a Linux beginner and can’t make a choice between vim and emacs, give Spacemacs a try."></a>If you are a Linux beginner and can’t make a choice between vim and emacs, give <a href="https://github.com/syl20bnr/spacemacs/tree/master" target="_blank" rel="external"><strong>Spacemacs</strong></a> a try.</h4><h4 id="Basically-Spacemacs-is-an-emacs-package-that-combines-the-advantage-of-both-vim-and-emacs"><a href="#Basically-Spacemacs-is-an-emacs-package-that-combines-the-advantage-of-both-vim-and-emacs" class="headerlink" title="Basically, Spacemacs is *an emacs package that combines the advantage of both vim and emacs*."></a>Basically, <strong>Spacemacs</strong> is *an emacs package that combines the advantage of both vim and emacs*.</h4><h4 id="【Resources】"><a href="#【Resources】" class="headerlink" title="【Resources】:"></a>【Resources】:</h4><ul>
+<h1 id="Making-decision-between-Vim-Emacs"><a href="#Making-decision-between-Vim-Emacs" class="headerlink" title="Making decision between Vim/Emacs"></a>Making decision between Vim/Emacs</h1><h4 id="If-you-are-a-Linux-beginner-and-can’t-make-a-choice-between-vim-and-emacs-give-Spacemacs-a-try"><a href="#If-you-are-a-Linux-beginner-and-can’t-make-a-choice-between-vim-and-emacs-give-Spacemacs-a-try" class="headerlink" title="If you are a Linux beginner and can’t make a choice between vim and emacs, give Spacemacs a try."></a>If you are a Linux beginner and can’t make a choice between vim and emacs, give <a href="https://github.com/syl20bnr/spacemacs/tree/master" target="_blank" rel="external"><strong>Spacemacs</strong></a> a try.</h4><h4 id="Basically-Spacemacs-is-an-emacs-package-combines-advantages-of-vim-and-emacs"><a href="#Basically-Spacemacs-is-an-emacs-package-combines-advantages-of-vim-and-emacs" class="headerlink" title="Basically, Spacemacs is *an emacs package combines advantages of vim and emacs*."></a>Basically, <strong>Spacemacs</strong> is *an emacs package combines advantages of vim and emacs*.</h4><h4 id="【Resources】"><a href="#【Resources】" class="headerlink" title="【Resources】:"></a>【Resources】:</h4><ul>
 <li><a href="https://github.com/syl20bnr/spacemacs/tree/master" target="_blank" rel="external">Spacemacs GitHub</a></li>
 <li><a href="https://github.com/BenjaminRothschild/Spacemacs-rocks" target="_blank" rel="external">Chinese中文 Tutorial: Spacemacs Rock</a></li>
 <li><a href="https://www.youtube.com/watch?v=JWD1Fpdd4Pc" target="_blank" rel="external">Evil Mode: Or, How I Learned to Stop Worrying and Love Emacs</a></li>
@@ -786,101 +881,6 @@ explore(G, v)
     <summary type="html">
     
       &lt;h2 id=&quot;Introduction&quot;&gt;&lt;a href=&quot;#Introduction&quot; class=&quot;headerlink&quot; title=&quot;Introduction&quot;&gt;&lt;/a&gt;Introduction&lt;/h2&gt;&lt;p&gt;Exception handlers, also known as trap handlers or interrupt handlers, can easily be incorporated into a MIPS program. This guide is not intended to be comprehensive but provides the essential information for writing and using exception handlers.&lt;/p&gt;
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Dual Booting Or Virtual Machine To Learn Linux?</title>
-    <link href="https://vinc96.github.io/2016/09/16/Dual-Booting-Or-Virtual-Machine-To-Learn-Linux/"/>
-    <id>https://vinc96.github.io/2016/09/16/Dual-Booting-Or-Virtual-Machine-To-Learn-Linux/</id>
-    <published>2016-09-16T20:03:56.000Z</published>
-    <updated>2016-09-17T07:31:58.216Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote><p>I would suggest you to go with virtual box, provided your machine has atleast 4Gb RAM.</p>
-<p>Because:</p>
-<ol>
-<li>It is very likely that you will end up erasing your entire hard disk while installing Ubuntu. But there is no such risk when you install it in virtual box.</li>
-</ol>
-<a id="more"></a>
-<ol>
-<li><p>You can copy and take the virtual hard disk to other machines and attach it to virtual box there to have the same machine there as well.</p>
-</li>
-<li><p>You don’t have to install all the apps at both places, for example Skype because you can always use them by just minimizing your Ubuntu.</p>
-</li>
-<li><p>When you get comfortable with Linux, you can use linux server version instead of linux desktop. Linux server is very light because of no GUI.<br>This way your Linux will just be a terminal and you will need to use Windows for browsers and stuff. </p>
-</li>
-</ol>
-<p>Some suggestions:</p>
-<ol>
-<li><p>Put the virtual hard drive in some drive other than C and don’t hasitate when allocating space.</p>
-</li>
-<li><p>If you have a quad core CPU, allow the virtual machine to use atleast two.</p>
-</li>
-<li><p>Once you are in, avoid using mouse as much as you can. Try not to leave keyboard. This makes you fast.</p>
-</li>
-</ol>
-<p>Go learn it, you will love it. :)<br>Happy hunting ;)</p>
-<footer><strong>Pawan Bishnoi</strong><cite><a href="https://www.quora.com/Should-I-dual-boot-my-laptop-or-use-a-virtual-machine-to-Learn-Linux-as-there-may-be-a-boot-error-during-dual-booting/answer/Pawan-Bishnoi-3" target="_blank" rel="external">, Writing my story via vim, 8 hours a day since last year. ;)</a></cite></footer></blockquote>]]></content>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;&lt;p&gt;I would suggest you to go with virtual box, provided your machine has atleast 4Gb RAM.&lt;/p&gt;
-&lt;p&gt;Because:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;It is very likely that you will end up erasing your entire hard disk while installing Ubuntu. But there is no such risk when you install it in virtual box.&lt;/li&gt;
-&lt;/ol&gt;
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>阿里巴巴四员工编程抢月饼被开除</title>
-    <link href="https://vinc96.github.io/2016/09/14/%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4%E5%9B%9B%E5%91%98%E5%B7%A5%E7%BC%96%E7%A8%8B%E6%8A%A2%E6%9C%88%E9%A5%BC%E8%A2%AB%E5%BC%80%E9%99%A4/"/>
-    <id>https://vinc96.github.io/2016/09/14/阿里巴巴四员工编程抢月饼被开除/</id>
-    <published>2016-09-15T05:05:38.000Z</published>
-    <updated>2017-02-18T18:39:09.607Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="/img/icon/alibaba_sml.jpg" alt="Alibaba"></p>
-<a id="more"></a>
-<p>中秋节，各个公司纷纷给员工发月饼送去节日的问候，本来是件挺开心的事情，可是阿里巴巴有4名员工却因为月饼遭开除。</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9月12日，阿里巴巴开放员工抢购月饼，阿里巴巴集团安全部4位员工和阿里云安全团队的1位员工，用编写脚本代码方式，在公开秒杀月饼的内部活动“秒到”了133盒月饼。虽然没有付款，但最终在当天晚间被劝退。</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;当事人在知乎上表示，只是想抢一盒月饼送给亲戚，看到有人用程序刷，于是自己也写了个脚本抢购16时放出的月饼，可是不但没有跳转到付款页面，反而一共抢了16盒，于是赶紧打电话给行政说要退，随后就被约谈，解约走人了。</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“16:30 约谈，17:30 解约合同就备好了，18:00走人，走之前还特意问了下需不需要交接工作，大家都不care，走的事情比较重要。”如此迅速，当事人表示猝不及防。</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;对此，阿里巴巴集团市场公关委员会主席王帅在微博上表示，“今天这个引起争议的决定，让我们再次提醒自己和每个员工，每场游戏都有规则，所有偶然总有必然。无可奈何是因为万事都有底线。很遗憾但祝愿他们的未来更好。”</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9月14日，阿里巴巴集团首席人力官蒋芳对日前的“月饼事件”作出官方回应，表示“这不是一个容易做出的决定，也不是一个可以得到各方面理解的决定”。</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在内部信的最后，蒋芳“真心希望也相信这个事业人生旅途上的挫折，能让这几位年轻人想的更远走的更踏实”。</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;附蒋芳写给员工的内部信全文：</p>
-<pre><code>关于“月饼”事件的复盘
-
-9月12日，安全部4位同学和阿里云安全团队的1位同学，用编写脚本代码方式，在公开秒杀月饼的内部活动“秒到”了133盒月饼。
-
-首席风险官刘振飞及阿里云总裁胡晓明在与上述同学经过非常坦诚的沟通之后，公司对上述同学做出了劝退的决定。这不是一个容易做出的决定，也不是一个可以得到各方面理解的决定，这个决定也让公司再次成为舆论的风暴眼。
-
-来自公司内网，微博微信，知乎，各种对此事的关注和讨论我们一直在看。今天，集团用4个小时对此事进行了复盘和讨论，逍遥子、戴珊、行癫、振飞，郭靖，王坚，王帅，马老师及我都参与其中。最终我们选择支持振飞和晓明的决定，我们读到和听到各界的反馈，也检讨和反思我们在做这个决定之前和之后哪些工作没有做好，引发许多同事担忧我们对坚守价值观过于偏执以及会给鼓励创新的容错文化造成伤害。实话实说，我们也争论，纠结，感到难受。
-
-很多人问为什么我们处理的这么重？因为阿里是一家把权力真正下放到每个普通小二手里的公司，下放权力的基础就是组织和员工之间的本能的信任。只有一个建立在信任基础上的团队才能走得长远，打得起硬仗。因为只有授权才能服务好客户，更快地根据客户需求做出迅速有效的决定。但我们必须反复提醒自己，要善待手中的权力，也像爱惜自己的眼睛一样爱惜别人对自己的信任，爱惜自己的才华，更何况是以攻防网络灰黑产和反作弊为己任的安全部门同事。
-
-未来我们还将继续充分信任和授权我们的同事。在这个过程里，我们可能还会作出一些让公司陷入风暴眼的决定，因为我们不是做给别人看的，而是敬重大家彼此间的信任，一致的理念，遵循做事做人的初衷和本心。
-
-公司和人一样，不完美。我们很幸运，用本心做对了一件件小事，才有了今天的影响力；未来我们若不能保持一颗敬畏心，而是以自己的方便和获益为首要考虑，那么也将是一件件看似不起眼的小事，解构和击败所有人的奋斗。
-
-有时候往往无心之举，却带来的大家都不愿但也要面对结果，这种结果最让人无奈。在月圆之夜送同伴离开，应该是这个中秋最大的遗憾。真心希望也相信这个事业人生旅途上的挫折，能让这几位年轻人想的更远走的更踏实。每个阿里巴巴的同事，也更应该理解，因为征途远，责任重。唯有学会约束自己的欲望，尊重自己的能力，敬畏手中的权力，我们才担得起亿万客户的信任和托付。
-
-蒋芳
-
-2016年9月14日
-</code></pre><p>除非注明，月光博客文章均为原创，转载请以链接形式标明本文地址</p>
-<p>本文地址：<a href="http://www.williamlong.info/archives/4730.html" target="_blank" rel="external">author page</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;/img/icon/alibaba_sml.jpg&quot; alt=&quot;Alibaba&quot;&gt;&lt;/p&gt;
     
     </summary>
     
