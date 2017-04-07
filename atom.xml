@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://vinc96.github.io/"/>
-  <updated>2017-03-17T21:08:19.355Z</updated>
+  <updated>2017-04-07T07:48:06.036Z</updated>
   <id>https://vinc96.github.io/</id>
   
   <author>
@@ -14,6 +14,102 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>How To: Enable Jaybird X3 Stereo on Linux Mint 18 Mate</title>
+    <link href="https://vinc96.github.io/2017/04/07/Use-Jaybird-X3-on-Linux-Mint-18-Mate/"/>
+    <id>https://vinc96.github.io/2017/04/07/Use-Jaybird-X3-on-Linux-Mint-18-Mate/</id>
+    <published>2017-04-07T07:12:24.000Z</published>
+    <updated>2017-04-07T07:48:06.036Z</updated>
+    
+    <content type="html"><![CDATA[<pre><code>What you need:
+- Linux Mint 18 Mate System
+- Jaybird X3
+- Working Bluetooth adapter
+</code></pre><p>(note: settings may be a bit different on different desktop environment, I use Mate)<br><strong>Following these steps, you can have Jaybird X3 stereo mode enabled:</strong></p>
+<ol>
+<li>Open the system Sound preference application<ul>
+<li>Toggle Start Menu by pressing super key, type <strong>sound</strong> in search bar. </li>
+<li>Open the system Sound preference application</li>
+<li><img src="https://www.dropbox.com/s/rfvriwuynq5yitg/start%20menu%20sound.gif?raw=1" alt="start menu"></li>
+</ul>
+</li>
+<li>Change Jaybird X3 configuration<ul>
+<li>In the system Sound preference application, click the <strong>Hardware</strong> tab</li>
+<li>Find the Jaybird X3 entry, click on it, and click the Profile at the bottom of Sound setting application, choose High Fidelity Playback<br><img src="https://www.dropbox.com/s/il5g3fdcppzub3l/sound%20setting.gif?raw=1" alt="sound setting"></li>
+</ul>
+</li>
+<li>Set Jaybird X3 as default audio output<ul>
+<li>Now switch to <strong>Output</strong> tab</li>
+<li>In <strong>Choose a device for sound output</strong>, select Jaybird X3<br><img src="https://www.dropbox.com/s/7h1487uiczq7tpz/default%20output.gif?raw=1" alt="sound setting"></li>
+<li>Close the windows</li>
+</ul>
+</li>
+</ol>
+<h1 id="4-Test"><a href="#4-Test" class="headerlink" title="4. Test"></a>4. Test</h1><ul>
+<li>Now pair your Jaybird X3 to linux if you haven’t yet. Play a <a href="https://www.youtube.com/watch?v=4M1amUJWJvA" target="_blank" rel="external"><strong>song</strong></a> and listen.<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><strong>not work?!</strong> Shit…</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;pre&gt;&lt;code&gt;What you need:
+- Linux Mint 18 Mate System
+- Jaybird X3
+- Working Bluetooth adapter
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;(note: settings may be a bit 
+    
+    </summary>
+    
+    
+      <category term="Linux" scheme="https://vinc96.github.io/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Enable Intel 8260 bluetooth on Linux Mint18.1 (Gigabyte GC-WB867D-I)</title>
+    <link href="https://vinc96.github.io/2017/04/07/Mint18/"/>
+    <id>https://vinc96.github.io/2017/04/07/Mint18/</id>
+    <published>2017-04-07T06:56:11.000Z</published>
+    <updated>2017-04-07T07:45:37.493Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote>
+<p>preface: I have a <a href="https://www.amazon.com/gp/product/B019JH89YI" target="_blank" rel="external">Gigabyte GC-WB867D-I wifi+bluetooth card</a>. However, only the wifi function correctly on linux mint system. Mint system can’t detect the bluetooth part. So I did some research and luckly the bluetooth part get fixed. Here is how I did it.</p>
+<p>note: this article isn’t a good tutorial, it just shows how I fixed my intel 8260. Make sure you understand what these steps means before following them</p>
+</blockquote>
+<ol>
+<li><a href="https://wireless.wiki.kernel.org/_media/en/users/drivers/iwlwifi-8000-ucode-25.30.13.0.tgz" target="_blank" rel="external">Download Intel official driver</a> from <a href="http://www.intel.com/content/www/us/en/support/network-and-i-o/wireless-networking/000005511.html" target="_blank" rel="external">Intel website</a></li>
+<li>Install Intel official driver<ul>
+<li>unzip their tgz file, read the README in it.</li>
+<li>backup you /lib/firmware/ folder <em>(safety first)</em></li>
+<li>open terminal, get into the unzipped file, copy ucode file into /lib/firmware</li>
+<li>sudo -i cp iwlwifi-8000C-13.ucode /lib/firmware</li>
+<li><strong>reboot</strong></li>
+</ul>
+</li>
+<li>If the first two steps didn’t seem like solve your problem (they didn’t solve my problem), do the following steps as well.</li>
+<li>Check missing firmware<ul>
+<li>check your driver message with the following command:</li>
+<li>dmesg | egrep -i ‘blue|firm’</li>
+<li>If you have firmware file missed (I forgot what exactly messages indicate missing files, but should be obvious. If you are not sure, google the error message you have), download the missing file by searching on github (in my case, I was missing <strong>iwlwifi-8000C-(22/23/24/25/26).ucode</strong>, I downloaded them from <a href="https://github.com/NetBit73/NeteXt73_pakiety/tree/master/iwlwifi" target="_blank" rel="external">here</a> and <a href="https://github.com/OpenELEC/iwlwifi-firmware/tree/master/firmware" target="_blank" rel="external">here</a>)</li>
+<li><strong>reboot</strong></li>
+</ul>
+</li>
+<li><strong>cross your fingers, test your bluetooth</strong></li>
+</ol>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;preface: I have a &lt;a href=&quot;https://www.amazon.com/gp/product/B019JH89YI&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Gigabyte GC-WB867D-I
+    
+    </summary>
+    
+    
+      <category term="Linux" scheme="https://vinc96.github.io/tags/Linux/"/>
+    
+  </entry>
   
   <entry>
     <title>Resolve Macbook6,2 Suspend Problems on Mint 18.1</title>
@@ -801,103 +897,6 @@ explore(G, v)
     <summary type="html">
     
       &lt;p&gt;作者：顾鹏&lt;br&gt;链接：&lt;a href=&quot;https://www.zhihu.com/question/22420900/answer/21770992&quot;&gt;怎样成为全栈工程师（Full Stack Developer）？&lt;/a&gt;&lt;br&gt;来源：知乎&lt;br&gt;著作权归作者所有，转载请联系作者获得授权。&lt;br&gt;
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Google releases Allo: an AI-infused messaging app</title>
-    <link href="https://vinc96.github.io/2016/09/21/Google-releases-Allo-an-AI-infused-messaging-app/"/>
-    <id>https://vinc96.github.io/2016/09/21/Google-releases-Allo-an-AI-infused-messaging-app/</id>
-    <published>2016-09-21T18:11:29.000Z</published>
-    <updated>2016-09-21T19:11:10.941Z</updated>
-    
-    <content type="html"><![CDATA[<div class="video-container"><iframe src="//www.youtube.com/embed/WzV6mXIOVl4" frameborder="0" allowfullscreen></iframe></div>
-<a id="more"></a>
-<blockquote>
-<h2 id="Allo-now-available-on-Google-Play-and-App-Store"><a href="#Allo-now-available-on-Google-Play-and-App-Store" class="headerlink" title="Allo now available on Google Play and App Store"></a>Allo now available on <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.fireball" target="_blank" rel="external">Google Play</a> and <a href="https://itunes.apple.com/us/app/google-allo-smart-messaging/id1096801294?mt=8" target="_blank" rel="external">App Store</a></h2></blockquote>
-<ul>
-<li>An IM(instant messaging) app  <center><img src="http://mmbiz.qpic.cn/mmbiz_gif/w3eNBHXFDrCy19c8ZWN1qvVH5DhnLyvLe8j5VZbwx09DHKUsWKTBpgqw5rniaNicYTIibykz0thnOOYdUoam9LkfQ/0?wx_fmt=gif&amp;tp=webp&amp;wxfrom=5&amp;wx_lazy=1" alt="allo git"></center>
-
-
-</li>
-</ul>
-<ul>
-<li>Google Assistant<ul>
-<li>Find resturants nearby, share videos to watch</li>
-<li>Get answers, right in your conversation with friends.<ul>
-<li>tip: Add @google to your group conversation or chat one-on-one(Only with when both are using Allo)<br><center><img src="http://mmbiz.qpic.cn/mmbiz_gif/w3eNBHXFDrCy19c8ZWN1qvVH5DhnLyvLkZBNA8ykNW4UrTlqdlYaJn6dbF7TyQufNmLicAn4Yq3MnwxMxs7BTWg/0?wx_fmt=gif&amp;tp=webp&amp;wxfrom=5&amp;wx_lazy=1" alt="assistant"></center><br><br></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Smart Reply<ul>
-<li>Respond to messages without typing a single word. Smart Reply learns over time and suggests responses to text and photos, in your style.<br><br></li>
-</ul>
-</li>
-<li>Incognito mode<ul>
-<li>Send messages with end-to-end encryption, use private notifications to help keep your chats more discreet, and control how long your messages stick around with expiring chats.</li>
-</ul>
-</li>
-</ul>
-<div style="text-align: center"><img src="https://lh3.googleusercontent.com/FwaMPM_vPV8ecvOR96hr0o8IemZ-rcSDEAa1lxWmEJjHefrmn1RHc1ni2JhmxlEEKDM_zq94AwVaJtk4bVbAkkuaAV23oksTiMFJv0APSHXmzJZdzxY8wMxfgocKZdMtAbUe7UeBwLBEWkplNY4pevcfRz-CoSKfjmEGxnVSVPoZT0vcYoBTer3J3I6NeiFRMIAU25RS81cevqya9C9UcwP2-NCokERXOctwt5W5gxuMh0xxw4tCREkElozcbLbOFY7AhqAjFp04rofD_l34I12f2IrHFOoIe5QnrYv8pHInw7c4FuqQDdpo-5pSTHqSiPDwO3jRI53O2y2yQnGr_KiXp5Eo-WU3Af38_j2rJCHUd2WUO1VzovoqvqBKvjH8k6zIF1csP7W9QZR49kM6wFSub46efA3hlFxiLC_3d4Mj3ZVYOvfHCGlih4oMjUYpIko9T9bTD4OHfJw_laVyTOdG7d-cUmAE7IZdnIZtfJfnr0xZYUHRhVI7ozAKrtvVLmIJ30umhmQ6GqNfAocftTT1br8M9YebMpRdCd82d9hfzphSy1dmaiAOfpbcCsMy9orcObpxQsKUraGkUe4b5NmmMz898rZa6sWcqajAbg1gemRT=w573-h923-no" width="40%" alt="my allo" style="min-width: 500px"></div>
-
-<center><img src="http://mmbiz.qpic.cn/mmbiz_gif/w3eNBHXFDrDrU8gfDicLnOTYjn9OkibLpCiauI82Za2ickjlrL7aM0UBweZOc3UqmSskS3B400cibP9MrDibWRUndZww/0?wx_fmt=gif&amp;tp=webp&amp;wxfrom=5&amp;wx_lazy=1" alt="google logo"></center>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;div class=&quot;video-container&quot;&gt;&lt;iframe src=&quot;//www.youtube.com/embed/WzV6mXIOVl4&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>One Way To Handle MIPS OverFlow</title>
-    <link href="https://vinc96.github.io/2016/09/18/One-Way-To-Handle-MIPS-OverFlow/"/>
-    <id>https://vinc96.github.io/2016/09/18/One-Way-To-Handle-MIPS-OverFlow/</id>
-    <published>2016-09-18T22:02:02.000Z</published>
-    <updated>2016-09-18T22:45:46.380Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p>Exception handlers, also known as trap handlers or interrupt handlers, can easily be incorporated into a MIPS program. This guide is not intended to be comprehensive but provides the essential information for writing and using exception handlers.</p>
-<a id="more"></a>
-<p>Although the same mechanism services all three, exceptions, traps and interrupts are all distinct from each other. Exceptions are caused by exceptional conditions that occur at runtime such as invalid memory address references. Traps are caused by instructions constructed especially for this purpose, listed below. Interrupts are caused by external devices.</p>
-<p>MARS partially but not completely implements the exception and interrupt mechanism of SPIM.</p>
-<h2 id="Essential-Facts"><a href="#Essential-Facts" class="headerlink" title="Essential Facts"></a>Essential Facts</h2><p>Some essential facts about writing and using exception handlers include:</p>
-<ul>
-<li>MARS simulates basic elements of the MIPS32 exception mechanism.</li>
-<li>The MIPS instruction set includes a number of instructions that conditionally trigger a trap exception based on the relative values of two registers or of a constant and a register: teq, teqi (trap if equal), tne, tnei (trap if not equal), tge, tgeu, tgei, tgeiu (trap if greater than or equal), tlt, tltu, tlti, tltiu (trap if less than)</li>
-<li>When an exception occurs,<ol>
-<li>Coprocessor 0 register $12 (status) bit 1 is set</li>
-<li>Coprocessor 0 register $13 (cause) bits 2-6 are set to the exception type (codes below)</li>
-<li>Coprocessor 0 register $14 (epc) is set to the address of the instruction that triggered the exception</li>
-<li>If the exception was caused by an invalid memory address, Coprocessor 0 register $8 (vaddr) is set to the invalid address.</li>
-<li>Execution flow jumps to the MIPS instruction at memory location 0x800000180. This address in the kernel text segment (.ktext directive) is the standard MIPS32 exception handler location. The only way to change it in MARS is to change the MIPS memory configuration through the Settings menu item Memory Configuration.</li>
-</ol>
-</li>
-<li>There are three ways to include an exception handler in a MIPS program<br>1.Write the exception handler in the same file as the regular program. An example of this is presented below.<ol>
-<li>Write the exception handler in a separate file, store that file in the same directory as the regular program, and select the Settings menu item “Assemble all files in directory”</li>
-<li>Write the exception handler in a separate file, store that file in any directory, then open the “Exception Handler…” dialog in the Settings menu, check the check box and browse to that file.</li>
-</ol>
-</li>
-<li>If there is no instruction at location 0x800000180, MARS will terminate the MIPS program with an appropriate error message.</li>
-<li>The exception handler can return control to the program using the eret instruction. This will place the EPC register \$14 value into the Program Counter, so be sure to increment \$14 by 4 before returning to skip over the instruction that caused the exception. The mfc0 and mtc0 instructions are used to read from and write to Coprocessor 0 registers.</li>
-<li>Bits 8-15 of the Cause register \$13 can also be used to indicate pending interrupts. Currently this is used only by the Keyboard and Display Simulator Tool, where bit 8 represents a keyboard interrupt and bit 9 represents a display interrupt. For more details, see the Help panel for that Tool.</li>
-<li>Exception types declared in mars.simulator.Exceptions, but not necessarily implemented, are ADDRESS_EXCEPTION_LOAD (4), ADDRESS_EXCEPTION_STORE (5), SYSCALL_EXCEPTION (8), BREAKPOINT_EXCEPTION (9), RESERVED_INSTRUCTION_EXCEPTION (10), ARITHMETIC_OVERFLOW_EXCEPTION (12), TRAP_EXCEPTION(13), DIVIDE_BY_ZERO_EXCEPTION (15), FLOATING_POINT_OVERFLOW (16), and FLOATING_POINT_UNDERFLOW (17).</li>
-<li>When writing a non-trivial exception handler, your handler must first save general purpose register contents, then restore them before returning.</li>
-</ul>
-<h2 id="Example-of-Trap-Handler"><a href="#Example-of-Trap-Handler" class="headerlink" title="Example of Trap Handler"></a>Example of Trap Handler</h2><p>The sample MIPS program below will immediately generate a trap exception because the trap condition evaluates true, control jumps to the exception handler, the exception handler returns control to the instruction following the one that triggered the exception, then the program terminates normally.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line">    .text</div><div class="line">main:</div><div class="line">   teqi $t0,0     # immediately trap because $t0 contains 0</div><div class="line">   li   $v0, 10   # After return from exception handler, specify exit service</div><div class="line">   syscall        # terminate normally</div><div class="line"></div><div class="line"># Trap handler in the standard MIPS32 kernel text segment</div><div class="line"></div><div class="line">   .ktext 0x80000180</div><div class="line">   move $k0,$v0   # Save $v0 value</div><div class="line">   move $k1,$a0   # Save $a0 value</div><div class="line">   la   $a0, msg  # address of string to print</div><div class="line">   li   $v0, 4    # Print String service</div><div class="line">   syscall</div><div class="line">   move $v0,$k0   # Restore $v0</div><div class="line">   move $a0,$k1   # Restore $a0</div><div class="line">   mfc0 $k0,$14   # Coprocessor 0 register $14 has address of trapping instruction</div><div class="line">   addi $k0,$k0,4 # Add 4 to point to next instruction</div><div class="line">   mtc0 $k0,$14   # Store new address back into $14</div><div class="line">   eret           # Error return; set PC to value in $14</div><div class="line">   .kdata   </div><div class="line">msg:   </div><div class="line">   .asciiz &quot;Trap generated&quot;</div></pre></td></tr></table></figure></p>
-<h2 id="Widely-Used-Exception-Handler"><a href="#Widely-Used-Exception-Handler" class="headerlink" title="Widely Used Exception Handler"></a>Widely Used Exception Handler</h2><p>The exception handler exceptions.s provided with the SPIM simulator will assemble and run under MARS. The MARS assembler will generate warnings because this program contains directives that it does not recognize, but as long as the setting “Assembler warnings are considered errors” is not set this will not cause any problems.</p>
-<p>  Origin Article : <a href="http://courses.missouristate.edu/KenVollmar/mars/Help/MarsExceptions.html" target="_blank" rel="external">Writing and Using MIPS exception handlers in MARS</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;Introduction&quot;&gt;&lt;a href=&quot;#Introduction&quot; class=&quot;headerlink&quot; title=&quot;Introduction&quot;&gt;&lt;/a&gt;Introduction&lt;/h2&gt;&lt;p&gt;Exception handlers, also known as trap handlers or interrupt handlers, can easily be incorporated into a MIPS program. This guide is not intended to be comprehensive but provides the essential information for writing and using exception handlers.&lt;/p&gt;
     
     </summary>
     

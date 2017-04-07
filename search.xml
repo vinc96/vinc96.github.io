@@ -4,6 +4,69 @@
   
     
     <entry>
+      <title><![CDATA[How To: Enable Jaybird X3 Stereo on Linux Mint 18 Mate]]></title>
+      <url>https://vinc96.github.io/2017/04/07/Use-Jaybird-X3-on-Linux-Mint-18-Mate/</url>
+      <content type="html"><![CDATA[<pre><code>What you need:
+- Linux Mint 18 Mate System
+- Jaybird X3
+- Working Bluetooth adapter
+</code></pre><p>(note: settings may be a bit different on different desktop environment, I use Mate)<br><strong>Following these steps, you can have Jaybird X3 stereo mode enabled:</strong></p>
+<ol>
+<li>Open the system Sound preference application<ul>
+<li>Toggle Start Menu by pressing super key, type <strong>sound</strong> in search bar. </li>
+<li>Open the system Sound preference application</li>
+<li><img src="https://www.dropbox.com/s/rfvriwuynq5yitg/start%20menu%20sound.gif?raw=1" alt="start menu"></li>
+</ul>
+</li>
+<li>Change Jaybird X3 configuration<ul>
+<li>In the system Sound preference application, click the <strong>Hardware</strong> tab</li>
+<li>Find the Jaybird X3 entry, click on it, and click the Profile at the bottom of Sound setting application, choose High Fidelity Playback<br><img src="https://www.dropbox.com/s/il5g3fdcppzub3l/sound%20setting.gif?raw=1" alt="sound setting"></li>
+</ul>
+</li>
+<li>Set Jaybird X3 as default audio output<ul>
+<li>Now switch to <strong>Output</strong> tab</li>
+<li>In <strong>Choose a device for sound output</strong>, select Jaybird X3<br><img src="https://www.dropbox.com/s/7h1487uiczq7tpz/default%20output.gif?raw=1" alt="sound setting"></li>
+<li>Close the windows</li>
+</ul>
+</li>
+</ol>
+<h1 id="4-Test"><a href="#4-Test" class="headerlink" title="4. Test"></a>4. Test</h1><ul>
+<li>Now pair your Jaybird X3 to linux if you haven’t yet. Play a <a href="https://www.youtube.com/watch?v=4M1amUJWJvA" target="_blank" rel="external"><strong>song</strong></a> and listen.<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><strong>not work?!</strong> Shit…</li>
+</ul>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Enable Intel 8260 bluetooth on Linux Mint18.1 (Gigabyte GC-WB867D-I)]]></title>
+      <url>https://vinc96.github.io/2017/04/07/Mint18/</url>
+      <content type="html"><![CDATA[<blockquote>
+<p>preface: I have a <a href="https://www.amazon.com/gp/product/B019JH89YI" target="_blank" rel="external">Gigabyte GC-WB867D-I wifi+bluetooth card</a>. However, only the wifi function correctly on linux mint system. Mint system can’t detect the bluetooth part. So I did some research and luckly the bluetooth part get fixed. Here is how I did it.</p>
+<p>note: this article isn’t a good tutorial, it just shows how I fixed my intel 8260. Make sure you understand what these steps means before following them</p>
+</blockquote>
+<ol>
+<li><a href="https://wireless.wiki.kernel.org/_media/en/users/drivers/iwlwifi-8000-ucode-25.30.13.0.tgz" target="_blank" rel="external">Download Intel official driver</a> from <a href="http://www.intel.com/content/www/us/en/support/network-and-i-o/wireless-networking/000005511.html" target="_blank" rel="external">Intel website</a></li>
+<li>Install Intel official driver<ul>
+<li>unzip their tgz file, read the README in it.</li>
+<li>backup you /lib/firmware/ folder <em>(safety first)</em></li>
+<li>open terminal, get into the unzipped file, copy ucode file into /lib/firmware</li>
+<li>sudo -i cp iwlwifi-8000C-13.ucode /lib/firmware</li>
+<li><strong>reboot</strong></li>
+</ul>
+</li>
+<li>If the first two steps didn’t seem like solve your problem (they didn’t solve my problem), do the following steps as well.</li>
+<li>Check missing firmware<ul>
+<li>check your driver message with the following command:</li>
+<li>dmesg | egrep -i ‘blue|firm’</li>
+<li>If you have firmware file missed (I forgot what exactly messages indicate missing files, but should be obvious. If you are not sure, google the error message you have), download the missing file by searching on github (in my case, I was missing <strong>iwlwifi-8000C-(22/23/24/25/26).ucode</strong>, I downloaded them from <a href="https://github.com/NetBit73/NeteXt73_pakiety/tree/master/iwlwifi" target="_blank" rel="external">here</a> and <a href="https://github.com/OpenELEC/iwlwifi-firmware/tree/master/firmware" target="_blank" rel="external">here</a>)</li>
+<li><strong>reboot</strong></li>
+</ul>
+</li>
+<li><strong>cross your fingers, test your bluetooth</strong></li>
+</ol>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[Resolve Macbook6,2 Suspend Problems on Mint 18.1]]></title>
       <url>https://vinc96.github.io/2017/03/17/Resolve-Mint-18-1-Suspend-Problems-on-Macbook6-2/</url>
       <content type="html"><![CDATA[<blockquote>
