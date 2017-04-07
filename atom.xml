@@ -71,10 +71,13 @@
     <link href="https://vinc96.github.io/2017/04/07/Mint18/"/>
     <id>https://vinc96.github.io/2017/04/07/Mint18/</id>
     <published>2017-04-07T06:56:11.000Z</published>
-    <updated>2017-04-07T07:45:37.493Z</updated>
+    <updated>2017-04-07T07:54:37.163Z</updated>
     
     <content type="html"><![CDATA[<blockquote>
-<p>preface: I have a <a href="https://www.amazon.com/gp/product/B019JH89YI" target="_blank" rel="external">Gigabyte GC-WB867D-I wifi+bluetooth card</a>. However, only the wifi function correctly on linux mint system. Mint system can’t detect the bluetooth part. So I did some research and luckly the bluetooth part get fixed. Here is how I did it.</p>
+<p>background: I have a <a href="https://www.amazon.com/gp/product/B019JH89YI" target="_blank" rel="external">Gigabyte GC-WB867D-I wifi+bluetooth card</a>. However, only the wifi function correctly on linux mint system. Mint system can’t detect the bluetooth part. So I did some research and luckly the bluetooth part get fixed. Here is how I did it.</p>
+</blockquote>
+<p><br></p>
+<blockquote>
 <p>note: this article isn’t a good tutorial, it just shows how I fixed my intel 8260. Make sure you understand what these steps means before following them</p>
 </blockquote>
 <ol>
@@ -102,7 +105,7 @@
     <summary type="html">
     
       &lt;blockquote&gt;
-&lt;p&gt;preface: I have a &lt;a href=&quot;https://www.amazon.com/gp/product/B019JH89YI&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Gigabyte GC-WB867D-I
+&lt;p&gt;background: I have a &lt;a href=&quot;https://www.amazon.com/gp/product/B019JH89YI&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Gigabyte GC-WB867
     
     </summary>
     

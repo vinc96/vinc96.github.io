@@ -40,7 +40,10 @@
       <title><![CDATA[Enable Intel 8260 bluetooth on Linux Mint18.1 (Gigabyte GC-WB867D-I)]]></title>
       <url>https://vinc96.github.io/2017/04/07/Mint18/</url>
       <content type="html"><![CDATA[<blockquote>
-<p>preface: I have a <a href="https://www.amazon.com/gp/product/B019JH89YI" target="_blank" rel="external">Gigabyte GC-WB867D-I wifi+bluetooth card</a>. However, only the wifi function correctly on linux mint system. Mint system can’t detect the bluetooth part. So I did some research and luckly the bluetooth part get fixed. Here is how I did it.</p>
+<p>background: I have a <a href="https://www.amazon.com/gp/product/B019JH89YI" target="_blank" rel="external">Gigabyte GC-WB867D-I wifi+bluetooth card</a>. However, only the wifi function correctly on linux mint system. Mint system can’t detect the bluetooth part. So I did some research and luckly the bluetooth part get fixed. Here is how I did it.</p>
+</blockquote>
+<p><br></p>
+<blockquote>
 <p>note: this article isn’t a good tutorial, it just shows how I fixed my intel 8260. Make sure you understand what these steps means before following them</p>
 </blockquote>
 <ol>
